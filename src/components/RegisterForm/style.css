@@ -1,0 +1,34 @@
+
+.react-tel-input input{
+    width: 100% !important;
+    background-color: #1b1b1c !important;
+    border: 1px solid #767676 !important;
+    color: #fff;
+}
+
+.flag-dropdown {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.otp_actionBtn{
+    font-size: 12px;
+    background-color: #1b1b1c !important;
+    border: 1px solid #767676 !important;
+    color: #fff;
+    width: 100%;
+    padding: 7px 0px;
+    border-radius: 4px !important;
+
+}
+
+.country-list {
+    max-height: 110px !important;
+}
+
+.otp_with_btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    gap: 10px;
+}

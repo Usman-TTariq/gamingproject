@@ -3,147 +3,157 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import { facebookIcon, twitterIcon, instragramIcon, linkedinIcon, phoneIcon, mailIcon, locationIcon, paymentMethodsImg } from "../../../asserts/images";
+// import { facebookIcon, twitterIcon, instragramIcon, linkedinIcon, phoneIcon, mailIcon, locationIcon, paymentMethodsImg } from "../../../asserts/images";
 
-import { footerLogo } from "../../../asserts/images";
+import { Flag, footerArrowIcon, footerBarImg01, footerBarImg02, footerLogo } from "../../../asserts/images";
+// import { useState } from "react";
+// import ReactFlagsSelect from "react-flags-select";
 
 import "./style.css"
 
 const Footer = () => {
+
+  // const [selected, setSelected] = useState("");
 
   return (
     <>
       <footer>
       <Container>
         <Row>
-          <Col  sm={4} lg={4}>
-            <div>
+          <Col  sm={2} lg={3} className="col-4">
+          <div className="pt-1">
 
-              <div className="footerLogoImg">
-                <img src={footerLogo} alt="footer_logo"></img>
+            <h6 className="footer_links_heading">
+              Sports
+            </h6>
+
+            <ul className="footer_links_list list-unstyled">
+            <li ><Link className="footer_detail" to="/">Home</Link></li>
+            <li ><Link className="footer_detail" to="/blogs">Live</Link></li>
+            <li ><Link className="footer_detail" to="/contact-us">Sports Rules</Link></li>
+            </ul>
+
+            </div>
+          </Col>
+
+          <Col xs={4} sm={2} lg={3}>
+            <div className="pt-1">
+
+             <h6 className="footer_links_heading">
+                Casino
+             </h6>
+
+             <ul className="footer_links_list list-unstyled">
+              <li ><Link className="footer_detail">Games</Link></li>
+              <li ><Link className="footer_detail">VIP</Link></li>
+              <li ><Link className="footer_detail">Promotions</Link></li>
+              {/* <li ><Link className="footer_detail">Dual Roller Shades</Link></li> */}
+             </ul>
+
+            </div>
+          </Col>
+
+          <Col xs={4} sm={2} lg={3}>
+            <div className="pt-1">
+
+             <h6 className="footer_links_heading">
+              Support
+             </h6>
+
+             <ul className="footer_links_list list-unstyled">
+              <li ><Link className="footer_detail" to="/about">Refer & Earn</Link></li>
+              <li ><Link className="footer_detail" to="/blogs">Responsible</Link></li>
+              <li ><Link className="footer_detail" to="/contact-us">Gambling</Link></li>
+              <li ><Link className="footer_detail">Gamble Aware 
+                  <img src={footerArrowIcon} alt="arrow" className="footerArrow"></img></Link>
+              </li>
+              <li ><Link className="footer_detail">Live Support</Link></li>
+             </ul>
+
+            </div>
+          </Col>
+
+          <Col xs={4} sm={4} lg={3}>
+          <div className="pt-1">
+
+            <h6 className="footer_links_heading">
+              Community
+            </h6>
+
+            <ul className="footer_links_list list-unstyled">
+            <li ><Link className="footer_detail" to="/about">Telegram
+            <img src={footerArrowIcon} alt="arrow" className="footerArrow"></img>
+            </Link></li>
+            <li ><Link className="footer_detail" to="/blogs">Facebook
+            <img src={footerArrowIcon} alt="arrow" className="footerArrow"></img>
+            </Link></li>
+            <li ><Link className="footer_detail" to="/contact-us">Twitter
+            <img src={footerArrowIcon} alt="arrow" className="footerArrow"></img>
+            </Link></li>
+            <li ><Link className="footer_detail">Instagram
+            <img src={footerArrowIcon} alt="arrow" className="footerArrow"></img>
+            </Link></li>
+            {/* <li ><Link className="footer_detail">Terms & Conditions</Link></li> */}
+            </ul>
+
+            </div>
+          </Col>
+
+          <Col xs={4} sm={4} lg={3}>
+          <div className="pt-1">
+
+            <h6 className="footer_links_heading">
+              About Us
+            </h6>
+
+            <ul className="footer_links_list list-unstyled">
+            <li ><Link className="footer_detail">Privacy Policy</Link></li>
+            <li ><Link className="footer_detail" to="/about">Licenses</Link></li>
+            <li ><Link className="footer_detail" to="/blogs">AML Policy</Link></li>
+            <li ><Link className="footer_detail" to="/contact-us">Terms of Service</Link></li>
+            {/* <li ><Link className="footer_detail">Terms </Link></li> */}
+            </ul>
+
+            </div>
+          </Col>
+
+          <Col xs={4} sm={4} lg={3}>
+          <div className="pt-1">
+
+            <h6 className="footer_links_heading">
+              Language
+            </h6>
+
+              <div>
+
+            {/* <ReactFlagsSelect
+                selected={selected}
+                onSelect={(code) => setSelected(code)}
+              /> */}
+                
+
               </div>
 
-              <p className="footer_detail footer_extra_padding">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-
-              <div className="footer_social_icons d-flex align-items-center gap-3">
-
-                <Link className="social_icon">
-                  <img src={facebookIcon} alt="facbook_icon"></img>
-                </Link>
-
-                <Link className="social_icon">
-                  <img src={twitterIcon} alt="facbook_icon"></img>
-                </Link>
-
-                <Link className="social_icon">
-                  <img src={instragramIcon} alt="facbook_icon"></img>
-                </Link>
-
-                <Link className="social_icon">
-                  <img src={linkedinIcon} alt="facbook_icon"></img>
-                </Link>
-
-              </div>
-
-            </div>
-          </Col>
-
-          <Col xs={12} sm={2} lg={2}>
-            <div className="pt-1">
-
-             <h6 className="footer_links_heading">
-                SHOP
-             </h6>
-
-             <ul className="footer_links_list list-unstyled">
-              <li ><Link className="footer_detail">Roller Shades</Link></li>
-              <li ><Link className="footer_detail">Zebra Shades</Link></li>
-              <li ><Link className="footer_detail">Cellular Shades</Link></li>
-              <li ><Link className="footer_detail">Dual Roller Shades</Link></li>
-             </ul>
-
-            </div>
-          </Col>
-
-          <Col xs={12} sm={2} lg={2}>
-            <div className="pt-1">
-
-             <h6 className="footer_links_heading">
-              Useful Links
-             </h6>
-
-             <ul className="footer_links_list list-unstyled">
-              <li ><Link className="footer_detail" to="/about">About Us</Link></li>
-              <li ><Link className="footer_detail" to="/blogs">Blogs</Link></li>
-              <li ><Link className="footer_detail" to="/contact-us">Contact Us</Link></li>
-              <li ><Link className="footer_detail">Privacy Policy</Link></li>
-              <li ><Link className="footer_detail">Terms & Conditions</Link></li>
-             </ul>
-
-            </div>
-          </Col>
-
-          <Col xs={12} sm={4} xl={2} lg={3}>
-            <div className="pt-1">
-
-             <h6 className="footer_links_heading">
-              Contact Info
-             </h6>
-
-             <ul className="footer_links_list list-unstyled">
-              <li>
-                <Link className="d-flex gap-3 align-items-center text-decoration-none">
-                  <span className="contact_info_icon">
-                    <img src={phoneIcon} alt="phone"></img>
-                  </span>
-                  <span className="contact_info">+1 (123) 456-7890</span>
-                </Link>
-              </li>
-
-              <li>
-                <Link className="d-flex gap-3 align-items-center text-decoration-none">
-                  <span className="contact_info_icon">
-                    <img src={mailIcon} alt="phone"></img>
-                  </span>
-                  <span className="contact_info">email@example.com</span>
-                </Link>
-              </li>
-
-              <li>
-                <Link className="d-flex gap-3 align-items-center text-decoration-none">
-                  <span className="contact_info_icon">
-                    <img src={locationIcon} alt="phone"></img>
-                  </span>
-                  <span className="contact_info">United States</span>
-                </Link>
-              </li>
-
-             </ul>
 
             </div>
           </Col>
         </Row>
       </Container>
+
+      <div className="">
+          <div className="container">
+              <div className="footer_bottom_bar">
+              <div className="footerBarImg1">
+            <img src={footerBarImg01} alt="footer"></img>
+          </div>
+
+          <div className="footerBarImg1">
+            <img src={footerBarImg02} alt="footer"></img>
+          </div>
+              </div>
+          </div>
+      </div>
     </footer>
-
-    <Container className="py-1">
-      <Row className="align-items-center">
-        <Col xs={12} sm={6} lg={6}>
-          <div>
-              <p className="footerbar_para m-0">Copyright 2024 All right reserved. <span className="footerBar_bold_text fw-bold">BLINDSNSHADES LLC</span></p>
-          </div>
-        </Col>
-
-        <Col xs={12} sm={6} lg={6}>
-          <div className="payments_img text-right">
-            <img src={paymentMethodsImg} alt="payments"></img>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-
 
     </>
   );

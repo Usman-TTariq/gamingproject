@@ -1,179 +1,201 @@
-
-import mainLogo from "./mainLogo.png";
-import heroHeadingImg from "./hero-heading-img.png";
-import heroHeadingFlowerImg from "./Vector.png";
-import heroHeadingSunImg from "./Group 838.png";
-import heroSectionImg01 from "./Rectangle 593.png";
-import heroSectionImg02 from "./Rectangle 592.png";
-import welcomeImg01 from "./vvb1.png";
-import welcomeImg02 from "./Rectangle 598.png";
-import arrowImg from "./arrow.png";
-import portfoliobkImg from "./Group 1171276089.png";
-import portfolioImg01 from "./Rectangle 603.png";
-import portfolioImg02 from "./Rectangle 605.png";
-import portfolioImg03 from "./Group 884.png";
-import productsImg01 from "./image5.png";
-import productsImg02 from "./image6.png";
-import productsImg03 from "./image7.png";
-import productsImg04 from "./image8.png";
-import contactUsBkImg from "./Group 1171276090.png";
-import galleryImg01 from "./Rectangle 606.png";
-import galleryImg02 from "./Rectangle 607.png";
-import galleryImg03 from "./Rectangle 608.png";
-import galleryImg04 from "./Rectangle 609.png";
-import galleryImg05 from "./Rectangle 610.png";
-import galleryImg06 from "./Rectangle 611.png";
-import galleryImg07 from "./Rectangle 612.png";
-import galleryImg08 from "./Rectangle 613.png";
-import facebookIcon from "./facebook.png";
-import twitterIcon from "./twitter.png";
-import instragramIcon from "./instagram.png";
-import linkedinIcon from "./Mask.png";
-import phoneIcon from "./phone.png";
-import mailIcon from "./mail.png";
-import locationIcon from "./location.png";
-import paymentMethodsImg from "./payment.png";
-import footerLogo from "./blindsNshadesllc.png";
-import plusLogo from "./plus.png";
-import dollarLogo from "./dollaar.png";
-import anonymous from "./anonymous.png";
-import customBannerImg01 from "./Rectangle 614.png";
-import customBannerImg02 from "./Rectangle 61355.png";
-import aboutImg01 from "./about01.png";
-import aboutImg02 from "./about02.png";
-import aboutImg03 from "./Group 1171276094.png";
-import blogImg01 from "./blog01.png";
-import blogImg02 from "./blog02.png";
-import blogImg03 from "./blog03.png";
-import blogImg04 from "./blog04.png";
-import blogImg05 from "./blog05.png";
-import blogImg06 from "./blog06.png";
-import blogImg07 from "./blog07.png";
-import blogImg08 from "./blog08.png";
-import blogImg09 from "./blog09.png";
-import productDetailImg from "./productDetail.png";
-import productDetailImg02 from "./productDetailImg02.png";
-import productDetailImg03 from "./productDetailImg03.png";
-import productDetailImg04 from "./productDetailImg04.png";
-import productDetailImg05 from "./productDetailImg05.png";
-import productDetailImg06 from "./productDetailImg06.png";
-import thumbnailImg01 from "./pordimg01.png";
-import thumbnailImg02 from "./pordimg02.png";
-import thumbnailImg03 from "./pordimg03.png";
-import thumbnailImg04 from "./pordimg04.png";
-import thumbnailImg05 from "./pordimg05.png";
-import thumbnailImg06 from "./pordimg06.png";
-import circleImg from "./circle-img.png";
-import heartwithquestionMart from "./heart_with_ex.png";
-import truck from "./truck.png";
-import productColorSelectionImg01 from "./productColorImg01.png";
-import productColorSelectionImg02 from "./productColorImg02.png";
-import productColorSelectionImg03 from "./productColorImg03.png";
-import productColorSelectionImg04 from "./productColorImg04.png";
-import productColorSelectionImg05 from "./productColorImg05.png";
-import productColorSelectionImg06 from "./productColorImg06.png";
-import productColorSelectionImg07 from "./productColorImg07.png";
-import productColorSelectionImg08 from "./productColorImg08.png";
-import productColorSelectionImg09 from "./productColorImg09.png";
-import productColorSelectionImg10 from "./productColorImg10.png";
-import insideShade from "./inside.png";
-import outsideShade from "./outside.png";
-import measure01 from "./measure01.png";
-import measure02 from "./measure02.png";
-import scale01 from "./scale01.png";
-import scale02 from "./scale02.png";
-import lift01 from "./life01.png";
-import lift02 from "./life02.png";
-import upgradeImg from "./upgrade01.png";
-import paypal from "./paypal.png";
-
+import cricketIcon from "./cricket-icon.png";
+import lobbyicon from "./lobby-icon.png";
+import arrow from "./arrow.png";
+import casinoIcon from "./live-casino.png";
+import bannerSliderImg from "./bannerSliderImg.png";
+import footballIcon from "./football-icon.png";
+import trendingImg01 from "./trendingImg01.png";
+import trendingImg02 from "./trendingImg02.png";
+import trendingImg03 from "./trendingImg03.png";
+import trendingImg04 from "./trendingImg04.png";
+import providersImg from "./Image.png";
+import gameProviderImg01 from "./providerImg01.png";
+import gameProviderImg02 from "./providerImg02.png";
+import gameProviderImg03 from "./providerImg03.png";
+import gameProviderImg04 from "./providerImg04.png";
+import gameProviderImg05 from "./providerImg05.png";
+import bestgames01 from "./bestgames01.png";
+import bestgames02 from "./bestgames02.png";
+import bestgames03 from "./bestgames03.png";
+import bestgames04 from "./bestgames04.png";
+import secondBanner from "./secondbanner.png";
+import communityIcon01 from "./communityIcon1.png";
+import communityIcon02 from "./communityIcon2.png";
+import communityIcon03 from "./communityIcon3.png";
+import communityIcon04 from "./communityIcon4.png";
+import communityIcon05 from "./communityIcon5.png";
+import communityIcon06 from "./communityIcon6.png";
+import communityIcon07 from "./communityIcon7.png";
+import communityIcon08 from "./communityIcon8.png";
+import communityIcon09 from "./communityIcon9.png";
+import networkIcon01 from "./networkIcon01.png";
+import networkIcon02 from "./networkIcon02.png";
+import networkIcon03 from "./networkIcon03.png";
+import networkIcon04 from "./networkIcon04.png";
+import networkIcon05 from "./networkIcon05.png";
+import networkIcon06 from "./networkIcon06.png";
+import networkIcon07 from "./networkIcon07.png";
+import networkIcon08 from "./networkIcon08.png";
+import networkIcon09 from "./networkIcon09.png";
+import networkIcon10 from "./networkIcon10.png";
+import networkIcon11 from "./networkIcon11.png";
+import networkIcon12 from "./networkIcon12.png";
+import networkIcon13 from "./networkIcon13.png";
+import networkIcon14 from "./networkIcon14.png";
+import networkIcon15 from "./networkIcon15.png";
+import networkIcon16 from "./networkIcon16.png";
+import networkIcon17 from "./networkIcon17.png";
+import networkIcon18 from "./networkIcon18.png";
+import networkIcon19 from "./networkIcon19.png";
+import footerBarImg01 from "./footerbarImg01.png";
+import footerBarImg02 from "./footerbarImg02.png";
+import footerArrowIcon from "./footerArrow.png";
+import cricketteamflag from "./cricketTeamFlag.png";
+import dropdownArrow from "./dropdownArrow.png";
+import gridIcon from "./gridIcon.png";
+import searchIcon from "./searchIcon.png";
+import batBall from "./Gloucestershire.png";
+import etherum from "./etherumIcon.png";
+import bitcoin from "./bitcoinIcon.png";
+import changeBannerImg from "./bannerImgCg.png";
+import fireIcon from "./Game.png";
+import Flag from "./flag01.png";
+import teamImg from "./team.png";
+import googelIcon from "./googleIcon.png";
+import bonusIcon from "./headerIcon.png";
+import questIcon from "./questIcon.png";
+import spinIcon from "./spinIcon.png";
+import sidebarCasinoIcon from "./casinoIcon.png";
+import sportsIcon from "./sportsIcon.png";
+import lotteryIcon from "./lotteryIcon.png";
+import updownIcon from "./updownIcon.png";
+import promotionsIcon from "./promotionIcon.png";
+import dailyContestIcon from "./dailyContestIcon.png";
+import raffleIcon from "./raffleIcon.png";
+import vipClubICon from "./vipclubIcon.png";
+import alllotteriesIcon from "./allLotteriesIcon.png";
+import BCLotteryIcon from "./BClotteryIcon.png";
+import popularIcon01 from "./popularIcon.png";
+import desktopHeroBanner01 from "./desktopherobanner01.png";
+import desktopHeroBanner02 from "./desktopherobanner02.png";
+import desktopHeroBanner03 from "./desktopherobanner03.png";
+import promoArrow from "./promoArrow.png";
+import topgames01 from "./topgames01.png";
+import topgamesIcon from "./topgamescardIcon.png";
+import betIcon01 from "./betRaceIcon01.png";
+import betAmount01 from "./betAmount01.png";
+import betAmount02 from "./betAmount02.png";
+import betAmount03 from "./betAmount03.png";
+import registerRightimg from "./register_now_img.png";
+import fishingIcon from "./fishingIcon.png";
+import SlotIcon from "./slotIcon.png";
+import forDesktop from "./team.png";
+// import searchIcon from "./searchIcon.png";
+import ModalLeftImg from "./Mask group.png";
+import topgames02 from "./topgames02.png";
+import topgames03 from "./topgames03.png";
+import topgames04 from "./topgames04.png";
+import spinWheelBtn from "./wheelspinbtn.png";
+import wheelBorder from "./wheelborder.png";
 
 export {
-    mainLogo,
-    heroHeadingImg,
-    heroHeadingFlowerImg,
-    heroHeadingSunImg,
-    heroSectionImg01,
-    heroSectionImg02,
-    welcomeImg01,
-    welcomeImg02,
-    arrowImg,
-    portfoliobkImg,
-    portfolioImg01,
-    portfolioImg02,
-    portfolioImg03,
-    productsImg01,
-    productsImg02,
-    productsImg03,
-    productsImg04,
-    contactUsBkImg,
-    galleryImg01,
-    galleryImg02,
-    galleryImg03,
-    galleryImg04,
-    galleryImg05,
-    galleryImg06,
-    galleryImg07,
-    galleryImg08,
-    facebookIcon,
-    twitterIcon,
-    instragramIcon,
-    linkedinIcon,
-    phoneIcon,
-    mailIcon,
-    locationIcon,
-    paymentMethodsImg,
-    footerLogo,
-    plusLogo,
-    dollarLogo,
-    anonymous,
-    customBannerImg01,
-    customBannerImg02,
-    aboutImg01,
-    aboutImg02,
-    aboutImg03,
-    blogImg01,
-    blogImg02,
-    blogImg03,
-    blogImg04,
-    blogImg05,
-    blogImg06,
-    blogImg07,
-    blogImg08,
-    blogImg09,
-    productDetailImg,
-    thumbnailImg01,
-    thumbnailImg02,
-    thumbnailImg03,
-    thumbnailImg04,
-    thumbnailImg05,
-    thumbnailImg06,
-    productDetailImg02,
-    productDetailImg03,
-    productDetailImg04,
-    productDetailImg05,
-    productDetailImg06,
-    circleImg,
-    heartwithquestionMart,
-    truck,
-    productColorSelectionImg01,
-    productColorSelectionImg02,
-    productColorSelectionImg03,
-    productColorSelectionImg04,
-    productColorSelectionImg05,
-    productColorSelectionImg06,
-    productColorSelectionImg07,
-    productColorSelectionImg08,
-    productColorSelectionImg09,
-    productColorSelectionImg10,
-    insideShade,
-    outsideShade,
-    measure01,
-    measure02,
-    scale01,
-    scale02,
-    lift01,
-    lift02,
-    upgradeImg,
-    paypal
+    cricketIcon,
+    lobbyicon,
+    arrow,
+    bannerSliderImg,
+    footballIcon,
+    trendingImg01,
+    trendingImg02,
+    trendingImg03,
+    trendingImg04,
+    providersImg,
+    gameProviderImg01,
+    gameProviderImg02,
+    gameProviderImg03,
+    gameProviderImg04,
+    gameProviderImg05,
+    bestgames01,
+    bestgames02,
+    bestgames03,
+    bestgames04,
+    secondBanner,
+    communityIcon01,
+    communityIcon02,
+    communityIcon03,
+    communityIcon04,
+    communityIcon05,
+    communityIcon06,
+    communityIcon07,
+    communityIcon08,
+    communityIcon09,
+    networkIcon01,
+    networkIcon02,
+    networkIcon03,
+    networkIcon04,
+    networkIcon05,
+    networkIcon06,
+    networkIcon07,
+    networkIcon08,
+    networkIcon09,
+    networkIcon10,
+    networkIcon11,
+    networkIcon12,
+    networkIcon13,
+    networkIcon14,
+    networkIcon15,
+    networkIcon16,
+    networkIcon17,
+    networkIcon18,
+    networkIcon19,
+    footerBarImg01,
+    footerBarImg02,
+    footerArrowIcon,
+    cricketteamflag,
+    dropdownArrow,
+    gridIcon,
+    searchIcon,
+    batBall,
+    etherum,
+    bitcoin,
+    changeBannerImg,
+    casinoIcon,
+    fireIcon,
+    Flag,
+    teamImg,
+    googelIcon,
+    bonusIcon,
+    questIcon,
+    spinIcon,
+    sidebarCasinoIcon,
+    sportsIcon,
+    lotteryIcon,
+    updownIcon,
+    promotionsIcon,
+    dailyContestIcon,
+    raffleIcon,
+    vipClubICon,
+    alllotteriesIcon,
+    BCLotteryIcon,
+    popularIcon01,
+    desktopHeroBanner01,
+    desktopHeroBanner02,
+    desktopHeroBanner03,
+    promoArrow,
+    topgames01,
+    topgamesIcon,
+    betIcon01,
+    betAmount01,
+    betAmount02,
+    betAmount03,
+    registerRightimg,
+    fishingIcon,
+    SlotIcon,
+    forDesktop,
+    ModalLeftImg,
+    topgames02,
+    topgames03,
+    topgames04,
+    spinWheelBtn,
+    wheelBorder
+    // searchIcon
 }

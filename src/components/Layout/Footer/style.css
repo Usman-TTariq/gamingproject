@@ -1,9 +1,28 @@
 
 footer{
-    background-image: url("../../../asserts/images/Group\ 1171276089.png");
+    /* background-image: url("../../../asserts/images/Group\ 1171276089.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: transparent;
     padding: 50px 0px;
+}
+
+.footer_bottom_bar{
+    border-top: 1px solid #767676;
+    border-bottom: none;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerArrow{
+    width: 14px;
+    margin-left: 6px;
+}
+
+.footerBarImg1 img{
+    width: 210px;
 }
 
 .footerLogoImg{
@@ -15,9 +34,11 @@ footer{
 }
 
 .footer_detail{
-    color: #fff;
-    font-size: 14px;
-    font-family: 'Jost';
+    /* color: #fff; */
+    color: #B0B0B3;
+    font-size: 16px;
+    /* font-family: 'Jost'; */
+    font-family: 'proxima';
     text-align: justify;
     line-height: 24px;
     text-decoration: none;
@@ -58,7 +79,9 @@ footer{
 
 .footer_links_heading{
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-size: 18px;
+    /* color: #E9EAEB; */
 }
 
 .footer_links_list{
@@ -104,6 +127,21 @@ ul.footer_links_list li{
 
 @media(max-width: 990px){
 
+    .footer_detail{
+        font-size: 14px !important;
+    }
+
+    .footer_bottom_bar{
+        border-bottom: 1px solid #767676;
+    }
+
+    .footer_links_heading{
+        color: #fff;
+        /* text-transform: uppercase; */
+        font-size: 14px !important;
+        /* color: #E9EAEB; */
+    }
+
     .footerLogoImg img{
         height: auto;
         width: 100%;
@@ -112,6 +150,15 @@ ul.footer_links_list li{
     .footer_extra_padding {
         padding-right: 12px;
     }
+
+    .footer_bottom_bar{
+        justify-content: space-between !important;
+    }
+
+    footer{
+        background-color: #1C1D21 !important;
+    }
+
     }
 
 

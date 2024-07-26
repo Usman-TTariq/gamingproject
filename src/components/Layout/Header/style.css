@@ -1,4 +1,179 @@
 
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    margin-top: -5px;
+  }
+  
+  .input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    /* background-color: #1557c0; */
+    background-color: transparent;
+    /* box-shadow: 0px 0px 3px #1557c0; */
+    box-shadow: none;
+    padding-right: 40px;
+    color: #fff;
+    border: none;
+  }
+  
+  .input::placeholder,
+  .input {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 17px;
+  }
+  
+  .input::placeholder {
+    color: #8f8f8f;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: 0.2s linear;
+    border: none;
+  }
+  
+  .icon:focus ~ .input,
+  .input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #1557c0;
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  }
+
+
+
+
+
+
+
+
+.headerTopBar{
+    background-color: #49A31A;
+    padding: 10px 0px;
+    color: #fff;
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+
+
+.headerTop_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTop_left_side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_instruction_actionBtn{
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+}
+
+.headerTopBar h6{
+    /* font-family: 'RussoOne'; */
+    font-family: 'proximaBold';
+    letter-spacing: 0.5px;
+}
+
+.intall_on_ios_text{
+    color: #E3E5E9;
+    font-family: 'proxima';
+    font-size: 12px;
+}
+
+.instant_download_text{
+    color: #fff;
+    font-size: 9px;
+    /* font-family: 'proxima'; */
+    /* font-family: 'proximaMedium'; */
+    /* font-family: 'proximaLight'; */
+}
+
+.star_icon{
+    display: inline-block;
+    font-size: 10px;
+}
+
+.star_icon svg{
+    background-color: transparent;
+    padding: 0px;
+}
+
+.all_stars{
+    display: flex;
+    gap: 2px;
+}
+
+.logo_title{
+    color: #49a31a;
+    /* font-family: 'RussoOne'; */
+    font-family: 'proximaBold';
+    letter-spacing: 1px;
+    
+}
+
+.navbar_actionBtns{
+    display: flex;
+    gap: 10px;
+}
+
+.signin_actionBtn{
+    background-color: transparent !important;
+    border: none !important;
+    color: #EAEBEC !important;
+    font-size: 18px !important;
+    padding: 12px 20px !important;
+    /* font-weight: 700 !important; */
+    font-family: 'proximaBold';
+}
+
+.register_actionBtn{
+    background-color: #8259FF !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    padding: 12px 20px !important;
+    /* font-weight: 700 !important; */
+    border-radius: 4px !important;
+    font-family: 'proximaBold';
+}
+
+/* nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .mainLogoImg img{
     height: 20px;
@@ -25,6 +200,47 @@
     box-shadow: none !important;
 }
 
+
+header{
+    background-color: #2C2E33;
+    margin-left: 5px;
+}
+
+.header_logo_title{
+    display: none;
+}
+
+.header_desktop_tabs{
+    display: flex;
+    gap: 10px;
+}
+
+.search_actionBtn{
+    background-color: transparent;
+    border: none;
+}
+
+.search_actionBtn img{
+    width: 22px;
+}
+
+.search_button_box{
+    transform: translate(18px, 4px);
+}
+
+.modal-header{
+    padding-left: 0px !important;
+}
+
+.modal-body{
+    padding-left: 0px !important;
+}
+
+.otp_with_btn input{
+    height: 45px !important;
+}
+
+
 @media(max-width: 1200px){
     .navbar-nav{
         gap: 3px;
@@ -46,12 +262,66 @@
 }
 
 @media(max-width: 990px){
+
+    .register_actionBtn{
+        font-size: 14px !important;
+    }
+
+    .signin_actionBtn{
+        font-size: 14px !important;
+    }
+
+    header{
+        margin-left: 0px !important;
+    }
+
+    .modal-body{
+        padding-left: 18px !important;
+    }
+
+    /* .btn-close{
+        right: 18px !important;
+        top: -33px !important;
+    } */
+
+    .modal-header{
+        padding-left: 16px !important;
+    }
+
+    .making_it_hide{
+        display: none !important;
+    }
+
+    .search_button_box{
+        display: none !important;
+    }
+
     .navbar-nav-scroll{
         max-height: fit-content !important;
     }
 
+    .header_desktop_tabs{
+        display: none !important;
+    }
+
+    .header_logo_title{
+        display: block !important;
+    }
+
+    nav{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    header{
+        background-color: transparent !important;
+    }
+
     .navbar-nav .nav-link{
         text-align: center;
+    }
+
+    .headerTopBar{
+        display: block !important;
     }
 }
 
@@ -72,3 +342,144 @@
 
 }
 
+
+
+
+.modal-content{
+    background-color: #25252A !important;
+}
+
+
+.btn-close{
+    filter: invert(1) !important;
+    background-size: 32% !important;
+    padding: 0px 16px 0px 0px !important;
+    position: absolute;
+    right: 18px;
+    /* right: 26px;
+    top: -20px; */
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+}
+
+.form_custom_input{
+    background-color: #1b1b1c !important;
+    border: 1px solid #767676 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+}
+
+.form_custom_input:focus{
+    box-shadow: none !important;
+}
+
+.custom_form_label{
+    color: #878787;
+    margin-bottom: 0px !important;
+    font-family: 'proxima';
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+
+.modal_signin_actionBtn{
+    background-color: #340087 !important;
+    font-weight: 600 !important;
+    font-family: 'proxima' !important;
+    color: #fff !important;
+    border: 2px solid #340087 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.modal_signin_actionBtn:hover{
+    border: 2px solid #340087 !important;
+    color: #340087 !important;
+    background-color: #fff !important;
+    font-weight: 600 !important;
+}
+
+.forgot_password_actionBtn{
+    border: none !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    padding: 14px !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+}
+
+.modal_register_actionBtn{
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 0px !important;
+    font-weight: 500 !important;
+}
+
+.dont_have_an_account{
+    font-size: 12px;
+    color: #fff;
+}
+
+.login_directly{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px 10px;
+}
+
+.white_border_line{
+    display: inline-block;
+    background-color: #fff;
+    width: 33%;
+    height: 1px;
+}
+
+.login_directly_text{
+    color: #fff;
+    font-size: 12px;
+}
+
+.google_signin{
+    background-color: transparent;
+    border: none;
+}
+
+.google_signin img{
+    width: 16px;
+    background-color: #232323;
+}
+
+.signin_google_text{
+    background-color: #373737;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.modal_tab_btn{
+    background-color: #373737;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #646464;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+
+.modal_header_tabs{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.active_tab{
+    background-color: #49A31A !important;
+}

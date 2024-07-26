@@ -1,6 +1,6 @@
 
 .product_detail_section{
-    padding: 20px 0px 40px;
+    padding: 30px 0px 40px;
 }
 
 .product_single_image img{
@@ -248,6 +248,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
     border: 1px solid #8ED1E6;
     padding: 12px;
     border-radius: 8px;
@@ -377,4 +378,164 @@
 
 .paypalImg{
     width: 45px;
+}
+
+.qty_text_and_actionBtn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.measurement_box_with_img{
+    display: flex;
+    padding: 16px 0px;
+    gap: 24px; 
+}
+
+.warranty_options_box{
+    width: 45%;
+    margin: 10px 0px;
+}
+
+.warranty_options_head{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 6px;
+}
+
+.warranty_icon_img img{
+    width: 16px;
+}
+
+.single_warranty{
+    display: flex;
+    align-items: baseline;
+    gap: 22px;
+    justify-content: end;
+}
+
+@media(max-width: 1400px){
+    .qty_text_and_actionBtn{
+        gap: 10px;
+    }
+
+    .quantity_quote{
+        width: 50%;
+    }
+
+    .single_thumbnail_img{
+        height: 80px;
+    }
+}
+
+@media(max-width: 1200px){
+    .free_sample_text{
+        font-size: 12px;
+    }
+
+    .measurement_box_with_img{
+        gap: 14px;
+    }
+
+    .gurantee_your_fit_main{
+        gap: 7px;
+    }
+
+    .coupon_with_payment{
+        gap: 10px;
+    }
+
+    .coupon_box{
+        padding: 12px;
+    }
+
+    .quantity_quote{
+        width: 45%;
+    }
+
+    .request_actionBtn{
+        font-size: 12px;
+    }
+
+    .single_thumbnail_img{
+        height: 70px;
+    }
+}
+
+@media(max-width: 990px){
+    .single_thumbnail_img{
+        height: 80px;
+    }
+
+    .coupon_box{
+        width: 50%;
+    }
+
+    .quantity_quote{
+        width: 50%;
+    }
+
+    .footer_links_heading{
+        font-size: 12px;
+    }
+
+    .single_thumbnail_img{
+        height: 65px;
+    }
+}
+
+@media(max-width: 575px){
+    .coupon_with_payment{
+        flex-wrap: wrap;
+    }
+
+    .coupon_box, .quantity_quote{
+        width: 100%;
+    }
+
+    .measurement_box_with_img{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 545px){
+    .thumbnail-container{
+        overflow-y: scroll;
+        gap: 10px;
+    }
+}
+
+@media(max-width: 460px){
+    .enter_measurement_title{
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width: 425px){
+    .product_detail_accordian {
+        .accordion-button {
+            font-family: 'poppinsSemibold';
+            font-size: 14px;
+        }
+    }
+
+    .kid_friendly_para{
+        font-size: 10px;
+    }
+
+    .window_size_img img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(max-width: 350px){
+    .product_detail_accordian {
+        .accordion-button {
+            font-family: 'poppinsSemibold';
+            font-size: 12px;
+        }
+    }
 }

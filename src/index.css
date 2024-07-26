@@ -1,6 +1,6 @@
 body {
   margin: 0;
- 
+  background-color: #25252A !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -66,17 +66,44 @@ body {
 }
 
 
+@font-face {
+  font-family: 'proxima';
+  src: url('./asserts/fonts/Fontspring-DEMO-proximanova-regular.otf');
+}
+
+@font-face {
+  font-family: 'proximaMedium';
+  src: url('./asserts/fonts/Fontspring-DEMO-proximanova-medium.otf');
+}
+
+@font-face {
+  font-family: 'proximaLight';
+  src: url('./asserts/fonts/Fontspring-DEMO-proximanova-light.otf');
+}
+
+@font-face {
+  font-family: 'proximaBold';
+  src: url('./asserts/fonts/Fontspring-DEMO-proximanova-bold.otf');
+}
+
+@font-face {
+  font-family: 'proximaExtraBold';
+  src: url('./asserts/fonts/Fontspring-DEMO-proximanova-extrabold.otf');
+}
+
+
 h1, h2, h3, h4, h5, h6{
-  font-family: 'RussoOne';
+  /* font-family: 'RussoOne'; */
+  font-family: 'proxima';
   margin: 0;
 	padding: 0;
 }
 
-p, span, ul, a{
+/* p, span, ul, a{
   font-family: 'poppinsMedium';
   margin: 0;
 	padding: 0;
-}
+} */
 
 
 .primaryHeading{
@@ -115,18 +142,243 @@ p, span, ul, a{
 }
 
 @media(max-width: 575px){
-  header{
-    padding: 0px 16px;
-  }
-
   .primaryHeading {
     font-size: 28px !important;
   }
+
+  .price_money{
+    font-size: 30px !important;
+  }
+
+  .trending_with_fire{
+    margin-bottom: 0px !important;
+  }
+
+  .single_scorebox_with_btns{
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+  .scorebox_content {
+    font-size: 10px !important;
 }
+
+.scorebox_date {
+  font-size: 8px !important;
+}
+
+.footerBarImg1 img{
+  width: 150px !important;
+}
+
+.trending_now_heading {
+color: #E9EAEB;
+font-size: 12px !important;
+}
+
+}
+
+
+
+@media(max-width: 426px){
+  .price_money{
+    font-size: 30px !important;
+  }
+
+  .trending_with_fire{
+    margin-bottom: 0px !important;
+  }
+
+  .single_scorebox_with_btns{
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+  .scorebox_content {
+    font-size: 10px !important;
+}
+
+.scorebox_date {
+  font-size: 8px !important;
+}
+}
+
+@media(max-width: 425px){
+  .footerBarImg1 img{
+      width: 150px !important;
+  }
+
+  .trending_now_heading {
+    color: #E9EAEB;
+    font-size: 12px !important;
+}
+}
+
+@media(max-width: 416px){
+  .trending_now_section {
+    margin-top: -25px !important;
+}
+
+.top_banner {
+  padding-bottom: 58px !important;
+}
+
+}
+
+@media(max-width: 410px){
+
+.top_banner {
+  padding-bottom: 56px !important;
+}
+
+}
+
+@media(max-width: 410px){
+
+.top_banner {
+  padding-bottom: 53px !important;
+}
+
+}
+
+@media(max-width: 400px){
+  .starting_para{
+    padding-right: 65px !important;
+  }
+
+  /* .scorebox_flag img {
+    width: 8px !important;
+}
+
+.scorebox_content {
+  font-size: 7px !important;
+  font-weight: 400 !important;
+}
+
+.scorebox_right_part button{
+  font-size: 7px !important;
+  height: 19px !important;
+  width: 32px !important;
+} */
+
+}
+
+@media(max-width: 395px){
+
+  .top_banner {
+    padding-bottom: 50px !important;
+  }
+
+  .football_team_img{
+    right: -28px !important;
+    top: -37px !important;
+    width: 149% !important;
+    height: 193% !important;
+  }
+  
+  }
+
+  @media(max-width: 385px){
+
+    .top_banner {
+      padding-bottom: 45px !important;
+    }
+    
+    }
+
+    @media(max-width: 380px){
+      .football_team_img {
+        right: -28px !important;
+        top: -37px !important;
+        width: 156% !important;
+        height: 196% !important;
+    }
+
+    .price_money {
+      font-size: 27px !important;
+  }
+    }
 
 @media(max-width: 375px){
   .primaryHeading {
     font-size: 20px !important;
   }
+
+  /* .price_money{
+    font-size: 28px !important;
+  } */
+
+  .starting_para{
+    padding-right: 50px !important;
+  }
+
+  .top_banner {
+    padding-bottom: 44px !important;
+  }
+
+.footerBarImg1 img{
+  width: 120px !important;
+}
+
+.footer_detail{
+  font-size: 12px !important;
+}
+
+/* .price_money {
+  font-size: 23px !important;
+} */
+
+
+/* .football_team_img{
+    right: -19px !important;
+    top: -38px !important;
+    width: 140% !important;
+    height: 196% !important;
+} */
+
+
+}
+
+@media(max-width: 370px){
+  .top_banner {
+    padding-bottom: 41px !important;
+  }
+}
+
+@media(max-width: 374px){
+  .game_winners_tabs button{
+    font-size: 12px !important;
+  }
+}
+
+@media(max-width: 365px){
+  .scorebox_right_part button{
+    height: 18px !important;
+    width: 26px !important;
+  }
+
+  .price_money {
+    font-size: 25px !important;
+}
+
+.football_team_img {
+  right: -28px !important;
+  top: -37px !important;
+  width: 159% !important;
+  height: 198% !important;
+}
+}
+
+@media(max-width: 360px){
+  .top_banner {
+    padding-bottom: 37px !important;
+  }
+  .price_money {
+    font-size: 24px !important;
+}
 }
 
