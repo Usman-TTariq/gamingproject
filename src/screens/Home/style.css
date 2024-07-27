@@ -45,41 +45,74 @@
 
 .container_wheel_box .one{
     background-color: #a225b1;
-    /* background-image: url("../../asserts/images/NUM2-01.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 89% 110%; */
+    background-image: url("../../asserts/images/NUM2-01.png");
+    background-repeat: no-repeat;
+    background-size: 115% 129%;
     left: 50%;
-    /* background-position: top; */
+    background-position: top;
 }
+
 .container_wheel_box .two{
     background-color: #ff9800;
     transform: rotate(45deg);
+    background-image: url("../../asserts/images/NUM1-01.png");
+    background-repeat: no-repeat;
+    background-size: 121% 136%;
+    background-position: top;
 }
+
 .container_wheel_box .three{
     background-color: #e91e63;
     transform:rotate(90deg);
+    background-image: url("../../asserts/images/NUM3-01.png");
+    background-repeat: no-repeat;
+    background-size: 116% 120%;
+    background-position: top;
 }
 .container_wheel_box .four{
     background-color: #4caf50;
     transform: rotate(135deg);
+    background-image: url("../../asserts/images/NUM4-01.png");
+    background-repeat: no-repeat;
+    background-size: 130% 135%;
+    background-position: top;
 }
 .container_wheel_box .five{
     background-color: #009688;
     transform: rotate(180deg);
+    background-image: url("../../asserts/images/NUM5-01.png");
+    background-repeat: no-repeat;
+    background-size: 126% 122%;
+    background-position: top;
 }
 .container_wheel_box .six{
     background-color: #795548;
     transform: rotate(225deg);
+    background-image: url("../../asserts/images/NUM6-01.png");
+    background-repeat: no-repeat;
+    background-size: 121% 145%;
+    background-position: top;
 }
 .container_wheel_box .seven{
     background-color: #9c27b0;
     transform: rotate(270deg);
+    background-image: url("../../asserts/images/NUM7-01.png");
+    background-repeat: no-repeat;
+    background-size: 126% 142%;
+    background-position: top;
 }
 .container_wheel_box .eight{
     background-color: #f44336;
     transform: rotate(315deg);
+    background-image: url("../../asserts/images/NUM8-01.png");
+    background-repeat: no-repeat;
+    background-size: 126% 128%;
+    background-position: top;
 }
 
+.for_spinner .modal-dialog{
+    max-width: 600px !important;
+}
 
 
 .arrow{
@@ -130,17 +163,23 @@
 .all_tabs{
     background-color: #1D1E22;
     padding: 16px 0px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+    border-radius: 10px;
     width: 100%;
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
-    
 }
+
+.all_tabs::-webkit-scrollbar {
+    opacity: 0;
+    display: none;
+  }
 
 .trending_now_second{
     padding-bottom: 24px;
+    margin-top: 0px !important;
 }
 
 .all_main_tabs{
@@ -184,6 +223,7 @@
 .trending_now_section{
     /* padding: 30px 0px; */
     margin-top: -27px;
+    /* margin-top: 0px; */
 }
 
 .trending_now_heading{
@@ -197,7 +237,7 @@
 }
 
 .trendingNowImg img {
-    height: 310px;
+    height: 255px;
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
@@ -229,6 +269,7 @@
 
 .top_games_actionBtn{
     background-color: #8259FF;
+    border: 1px solid #8259FF;
     font-family: 'proxima';
     color: #fff;
     border: none;
@@ -236,6 +277,12 @@
     font-size: 10px;
     padding: 7px;
     margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.top_games_actionBtn:hover{
+    color: #8259FF !important;
+    background-color: #fff !important;
 }
 
 .top_games_title_with_img img{
@@ -267,7 +314,7 @@
     border: none;
     padding: 16px 29px;
     font-family: 'poppinsSemibold';
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .bet_race_actionBtn:focus{
@@ -301,7 +348,7 @@
 }
 
 .promo_input::placeholder{
-    color: #7a7a7a !important;
+    color: #fff !important;
 }
 
 .have_a_promo_code_text{
@@ -405,7 +452,7 @@
 .providers_more_option{
     color: #49a31a;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .providerSingleSlider {
@@ -480,7 +527,7 @@
 }
 
 .super_eight{
-    font-size: 10px;
+    font-size: 14px;
     color: #fff;
     font-weight: 400;
     /* font-weight: 500; */
@@ -499,12 +546,12 @@
 
 .matches_number{
     color: #fff;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .current_match_date{
-    font-size: 10px;
+    font-size: 14px;
     color: #B0B0B0;
 }
 
@@ -512,7 +559,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -6px;
+    /* margin-top: -6px; */
 }
 
 .match_winning_score{
@@ -530,7 +577,7 @@
 }
 
 .cricket_team_name{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
     color: #fff;
 }
@@ -557,7 +604,7 @@
     padding: 12px 18px;
     gap: 12px;
     font-family: 'proxima';
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .grid_actionBtn{
@@ -591,13 +638,13 @@
 
 .scorebox_content{
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .scorebox_date{
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: -2px;
     display: block;
 }
@@ -612,6 +659,7 @@
     border-radius: 4px;
     padding-left: 6px;
     margin-bottom: 6px;
+    padding-top: 4px;
 }
 
 .scorebox_left_part{
@@ -625,7 +673,7 @@
 
 .scorebox_right_part button{
     border: none;
-    font-size: 10px;
+    font-size: 14px;
     height: 29px;
     width: 92px;
     border-radius: 3px;
@@ -704,6 +752,107 @@
     border-radius: 6px;
     padding: 10px 20px;
 }
+
+.bet_and_race_table_box .table tbody tr td:first-child::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betRaceIcon01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.bet_and_race_table_box .table tbody tr:first-child td:nth-child(3)::after,
+.bet_and_race_table_box .table tbody tr:nth-child(3) td:nth-child(3)::after,
+.bet_and_race_table_box .table tbody tr:nth-child(7) td:nth-child(3)::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betAmount01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bet_and_race_table_box .table tbody tr:nth-child(2) td:nth-child(3)::after,
+.bet_and_race_table_box .table tbody tr:nth-child(4) td:nth-child(3)::after,
+.bet_and_race_table_box .table tbody tr:nth-child(6) td:nth-child(3)::after,
+.bet_and_race_table_box .table tbody tr:nth-child(8) td:nth-child(3)::after
+{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betAmount02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bet_and_race_table_box .table tbody tr:nth-child(5) td:nth-child(3)::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betAmount03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bet_and_race_table_box .table tbody tr:first-child td:last-child::after,
+.bet_and_race_table_box .table tbody tr:nth-child(3) td:last-child::after,
+.bet_and_race_table_box .table tbody tr:nth-child(7) td:last-child::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betAmount01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bet_and_race_table_box .table tbody tr:nth-child(2) td:last-child:after,
+.bet_and_race_table_box .table tbody tr:nth-child(4) td:last-child:after,
+.bet_and_race_table_box .table tbody tr:nth-child(6) td:last-child:after,
+.bet_and_race_table_box .table tbody tr:nth-child(8) td:last-child:after
+{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betAmount02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bet_and_race_table_box .table tbody tr:nth-child(5) td:last-child::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../../asserts/images/betAmount03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game_winners_main_table .table tbody tr:first-child td:last-child::after,
+.game_winners_main_table .table tbody tr:nth-child(3) td:last-child::after,
+.game_winners_main_table .table tbody tr:nth-child(4) td:last-child::after,
+.game_winners_main_table .table tbody tr:nth-child(5) td:last-child::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url("../../asserts/images/etherumIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.game_winners_main_table .table tbody tr:nth-child(2) td:last-child::after,
+.game_winners_main_table .table tbody tr:nth-child(6) td:last-child::after,
+.game_winners_main_table .table tbody tr:nth-child(7) td:last-child::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url("../../asserts/images/bitcoinIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 
 .bet_and_race_table_box .table td, .bet_and_race_table_box .table th{
     background-color: transparent;
@@ -913,6 +1062,15 @@
     overflow: hidden;
     padding-bottom: 0px;
     height: 370px;
+}
+
+.main_right_badge_box{
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 40;
+    height: 250px;
+    width: 200px;
 }
 
 .sign_up_actionBtn {
@@ -1149,8 +1307,8 @@
 
 .bet_and_race_title{
     padding-bottom: 12px;
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #D3D3D4;
+    font-family: 'interSemibold';
 }
 
 .register_now_instantly_section{
@@ -1172,7 +1330,7 @@
     top: 0;
     right: 10%;
     height: 100%;
-    width: 330px;
+    /* width: 330px; */
 }
 
 .register_now_right_img img{
@@ -1226,12 +1384,13 @@
 .crypto_para{
     color: #DCDCDD;
     font-family: 'poppinsMedium';
+    font-size: 18px;
 }
 
 .online_casino_para{
     color: #6F7A85;
     font-family: 'poppinsSemibold';
-    font-size: 10px;
+    font-size: 12px;
     padding-right: 70px;
 }
 
@@ -1239,7 +1398,7 @@
     color: #49A31A;
     background-color: transparent;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .custom_textarea{
@@ -1253,7 +1412,7 @@
     color: #42484F !important;
     font-family: 'poppinsSemibold';
     padding-right: 100px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .leave_a_message{
@@ -1270,8 +1429,8 @@
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     position: absolute;
-    bottom: 114px;
-    right: -78px;
+    bottom: 18%;
+    right: -4.8%;
     z-index: 10;
     transform: rotate(270deg) translateX(20px);
     padding: 0px 10px; */
@@ -1279,8 +1438,8 @@
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     position: absolute;
-    bottom: 18%;
-    right: -4.8%;
+    bottom: 78px;
+    right: -77px;
     z-index: 10;
     transform: rotate(270deg) translateX(20px);
     padding: 0px 10px;
@@ -1299,13 +1458,13 @@
 .get_rewarded_text{
     color: #707B86;
     font-family: 'poppinsSemibold';
-    font-size: 10px;
+    font-size: 12px;
     
 }
 
 .email_info{
     color: #49A31A;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .making_none{
@@ -1319,15 +1478,21 @@
 
 
 .for_desktopImg {
-    position: absolute;
+    /* position: absolute;
     top: -93px;
     right: -40px;
+    height: 100%; */
+    position: absolute;
+    top: -163px;
+    right: -10px;
     height: 100%;
 }
 
 .for_desktopImg img {
-    width: 100%;
-    height: 118%;
+    /* width: 100%;
+    height: 118%; */
+    width: 103%;
+    height: 200%;
 }
 
 .top_games_section{
@@ -1349,6 +1514,10 @@
     transform: translateY(-50%);
 }
 
+.grid_actionBtn img{
+    width: 18px;
+}
+
 @media(max-width: 1024px){
     .wheel_with_border, #spin, .arrow{
         display: none !important;
@@ -1359,10 +1528,24 @@
 
 @media(max-width: 990px){
 
+    .trending_now_section{
+        margin-top: 3px !important;
+    }
+
+    .grid_actionBtn img{
+        width: 18px !important;
+    }
+
+    .dropdown_actionBtn{
+        font-size: 15px !important;
+    }
+
     .top_banner_left{
         position: relative !important;
-        top: 0px !important;
-        transform: translateY(0%) !important;
+        /* top: 0px !important;
+        transform: translateY(0%) !important; */
+        top: 50% !important;
+        transform: translateY(-20%) !important;
     }
 
     .making_border{
@@ -1491,6 +1674,10 @@
 
 @media(max-width: 767px){
 
+    .grid_actionBtn img{
+        width: auto !important;
+    }
+
     .extra_swiper{
         display: none !important;
     }
@@ -1504,19 +1691,19 @@
     }
 
     .super_eight{
-        font-size: 7px !important;
+        font-size: 9px !important;
     }
     
     .matches_number{
-    font-size: 7px !important;
+    font-size: 9px !important;
     }
     
     .current_match_date {
-        font-size: 7px !important;
+        font-size: 9px !important;
     }
     
     .cricket_team_name{
-        font-size: 7px !important;
+        font-size: 9px !important;
     }
     
     .cricket_team_flag img {
@@ -1529,19 +1716,19 @@
     
     .scorebox_content{
         
-        font-size: 10px !important;
+        font-size: 12px !important;
         
     }
     
     .scorebox_date{
-        font-size: 9px !important;
+        font-size: 11px !important;
     }
     
     
     .scorebox_right_part button{
-        font-size: 7px;
-        height: 21px;
-        width: 40px;
+        font-size: 10px;
+        height: 23px;
+        width: 45px;
     }
     
     
@@ -1549,6 +1736,27 @@
 
     .bet_and_race_table_box .table tbody tr td:nth-child(2){
         text-align: center;
+    }
+
+
+    @media(max-width: 390px){
+
+        .super_eight{
+            font-size: 8px !important;
+        }
+        
+        .matches_number{
+        font-size: 8px !important;
+        }
+        
+        .current_match_date {
+            font-size: 8px !important;
+        }
+        
+        .cricket_team_name{
+            font-size: 8px !important;
+        }
+
     }
 
     

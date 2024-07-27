@@ -97,6 +97,7 @@ import topgames03 from "./topgames03.png";
 import topgames04 from "./topgames04.png";
 import spinWheelBtn from "./wheelspinbtn.png";
 import wheelBorder from "./wheelborder.png";
+import agt from "./AGT.png";
 
 export {
     cricketIcon,
@@ -196,6 +197,7 @@ export {
     topgames03,
     topgames04,
     spinWheelBtn,
-    wheelBorder
+    wheelBorder,
+    agt
     // searchIcon
 }

@@ -381,33 +381,37 @@ header{
 }
 
 .custom_form_label{
-    color: #878787;
+    color: #BABBBD;
     margin-bottom: 0px !important;
-    font-family: 'proxima';
+    /* font-family: 'proxima'; */
+    font-family: 'poppinsRegular';
     font-size: 12px;
     padding-bottom: 4px;
 }
 
 .modal_signin_actionBtn{
-    background-color: #340087 !important;
-    font-weight: 600 !important;
+    background-color: #8259FF !important;
+    font-weight: 200 !important;
     font-family: 'proxima' !important;
     color: #fff !important;
-    border: 2px solid #340087 !important;
+    border: 2px solid #8259FF !important;
     transition: all 0.2s ease-in-out !important;
+    font-size: 14px !important;
 }
 
 .modal_signin_actionBtn:hover{
-    border: 2px solid #340087 !important;
-    color: #340087 !important;
+    border: 2px solid #8259FF !important;
+    color: #8259FF !important;
     background-color: #fff !important;
     font-weight: 600 !important;
 }
 
 .forgot_password_actionBtn{
+    /* font-family: 'poppinsRegular'; */
+    font-family: 'poppinsLight';
     border: none !important;
     background-color: transparent !important;
-    color: #fff !important;
+    color: #BABBBD !important;
     padding: 14px !important;
     display: inline-block !important;
     font-weight: 400 !important;
@@ -419,11 +423,13 @@ header{
     color: #fff !important;
     padding: 0px !important;
     font-weight: 500 !important;
+    font-family: 'poppinsMedium';
 }
 
 .dont_have_an_account{
+    font-family: 'poppinsLight';
     font-size: 12px;
-    color: #fff;
+    color: #BABBBD;
 }
 
 .login_directly{
@@ -441,13 +447,23 @@ header{
 }
 
 .login_directly_text{
-    color: #fff;
+    font-family: 'poppinsLight';
+    color: #BABBBD;
     font-size: 12px;
 }
 
 .google_signin{
     background-color: transparent;
     border: none;
+    margin: 0 auto;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.google_icon_box{
+    background-color: #232323;
+    padding: 7px 10px;
 }
 
 .google_signin img{
@@ -459,8 +475,9 @@ header{
     background-color: #373737;
     color: #fff;
     font-size: 12px;
-    padding: 5px 10px;
-    margin-left: 5px;
+    padding: 10px 15px;
+    /* margin-left: 5px; */
+    font-family: 'interSemibold';
 }
 
 .modal_tab_btn{
@@ -468,8 +485,9 @@ header{
     color: #fff;
     font-size: 14px;
     border: 1px solid #646464;
-    padding: 6px 16px;
+    padding: 6px 30px;
     border-radius: 4px;
+    font-family: 'poppinsMedium';
 }
 
 .modal_header_tabs{
@@ -477,7 +495,7 @@ header{
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 3px;
 }
 
 .active_tab{

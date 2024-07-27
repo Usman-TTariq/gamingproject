@@ -6,7 +6,7 @@ import BestProducts from "../../components/Bestproducts";
 import Gallery from "../../components/gallery";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { alllotteriesIcon, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, spinIcon, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
+import { agt, alllotteriesIcon, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, spinIcon, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
 import { Autoplay, Pagination } from 'swiper/modules';
 import "./style.css";
 import Portfolio from "../../components/Portfolio";
@@ -34,18 +34,18 @@ const Home = () => {
     { game: "Fruit Party", player: "Player6", bet: 12.50, multiplier: "1.3x", profit: 3.75 },
     { game: "Sweet Bonanza", player: "Player7", bet: 15.00, multiplier: "2.5x", profit: 22.50 },
     { game: "Mega Moolah", player: "Player8", bet: 7.25, multiplier: "1.7x", profit: 5.08 },
-    { game: "Book of Dead", player: "Player9", bet: 20.00, multiplier: "2.1x", profit: 22.00 },
-    { game: "Gonzo's Quest", player: "Player10", bet: 5.50, multiplier: "3.5x", profit: 19.25 },
-    { game: "Starburst", player: "Player11", bet: 9.75, multiplier: "1.9x", profit: 8.78 },
-    { game: "Big Bad Wolf", player: "Player12", bet: 11.00, multiplier: "1.6x", profit: 6.60 },
-    { game: "Reactoonz", player: "Player13", bet: 13.00, multiplier: "2.3x", profit: 16.90 },
-    { game: "Bonanza", player: "Player14", bet: 18.00, multiplier: "1.4x", profit: 7.20 },
-    { game: "Immortal Romance", player: "Player15", bet: 10.00, multiplier: "2.8x", profit: 18.00 },
-    { game: "Thunderstruck II", player: "Player16", bet: 14.00, multiplier: "1.9x", profit: 12.60 },
-    { game: "Legacy of Dead", player: "Player17", bet: 8.75, multiplier: "3.0x", profit: 17.50 },
-    { game: "Jackpot 6000", player: "Player18", bet: 6.50, multiplier: "2.5x", profit: 9.75 },
-    { game: "Piggy Riches", player: "Player19", bet: 9.00, multiplier: "1.6x", profit: 5.40 },
-    { game: "Mega Fortune", player: "Player20", bet: 10.50, multiplier: "2.1x", profit: 11.55 }
+    // { game: "Book of Dead", player: "Player9", bet: 20.00, multiplier: "2.1x", profit: 22.00 },
+    // { game: "Gonzo's Quest", player: "Player10", bet: 5.50, multiplier: "3.5x", profit: 19.25 },
+    // { game: "Starburst", player: "Player11", bet: 9.75, multiplier: "1.9x", profit: 8.78 },
+    // { game: "Big Bad Wolf", player: "Player12", bet: 11.00, multiplier: "1.6x", profit: 6.60 },
+    // { game: "Reactoonz", player: "Player13", bet: 13.00, multiplier: "2.3x", profit: 16.90 },
+    // { game: "Bonanza", player: "Player14", bet: 18.00, multiplier: "1.4x", profit: 7.20 },
+    // { game: "Immortal Romance", player: "Player15", bet: 10.00, multiplier: "2.8x", profit: 18.00 },
+    // { game: "Thunderstruck II", player: "Player16", bet: 14.00, multiplier: "1.9x", profit: 12.60 },
+    // { game: "Legacy of Dead", player: "Player17", bet: 8.75, multiplier: "3.0x", profit: 17.50 },
+    // { game: "Jackpot 6000", player: "Player18", bet: 6.50, multiplier: "2.5x", profit: 9.75 },
+    // { game: "Piggy Riches", player: "Player19", bet: 9.00, multiplier: "1.6x", profit: 5.40 },
+    // { game: "Mega Fortune", player: "Player20", bet: 10.50, multiplier: "2.1x", profit: 11.55 }
   ];
 
   const data02 = [
@@ -56,20 +56,20 @@ const Home = () => {
     { game: "Madame Destiny Megaw...", winners: "-", payout: "-BDT117.49" },
     { game: "Fire in the Hole 2", winners: "-", payout: "-BDT117.49" },
     { game: "Fruit Party", winners: "-", payout: "-BDT117.49" },
-    { game: "Sweet Bonanza", winners: "-", payout: "-BDT117.49" },
-    { game: "Mega Moolah", winners: "-", payout: "-BDT117.49" },
-    { game: "Book of Dead",winners: "-", payout: "-BDT117.49"},
-    { game: "Gonzo's Quest",winners: "-", payout: "-BDT117.49" },
-    { game: "Starburst", winners: "-", payout: "-BDT117.49" },
-    { game: "Big Bad Wolf",winners: "-", payout: "-BDT117.49"},
-    { game: "Reactoonz",winners: "-", payout: "-BDT117.49" },
-    { game: "Bonanza", winners: "-", payout: "-BDT117.49" },
-    { game: "Immortal Romance", winners: "-", payout: "-BDT117.49" },
-    { game: "Thunderstruck II", winners: "-", payout: "-BDT117.49" },
-    { game: "Legacy of Dead", winners: "-", payout: "-BDT117.49" },
-    { game: "Jackpot 6000",winners: "-", payout: "-BDT117.49" },
-    { game: "Piggy Riches", winners: "-", payout: "-BDT117.49" },
-    { game: "Mega Fortune", winners: "-", payout: "-BDT117.49" }
+    // { game: "Sweet Bonanza", winners: "-", payout: "-BDT117.49" },
+    // { game: "Mega Moolah", winners: "-", payout: "-BDT117.49" },
+    // { game: "Book of Dead",winners: "-", payout: "-BDT117.49"},
+    // { game: "Gonzo's Quest",winners: "-", payout: "-BDT117.49" },
+    // { game: "Starburst", winners: "-", payout: "-BDT117.49" },
+    // { game: "Big Bad Wolf",winners: "-", payout: "-BDT117.49"},
+    // { game: "Reactoonz",winners: "-", payout: "-BDT117.49" },
+    // { game: "Bonanza", winners: "-", payout: "-BDT117.49" },
+    // { game: "Immortal Romance", winners: "-", payout: "-BDT117.49" },
+    // { game: "Thunderstruck II", winners: "-", payout: "-BDT117.49" },
+    // { game: "Legacy of Dead", winners: "-", payout: "-BDT117.49" },
+    // { game: "Jackpot 6000",winners: "-", payout: "-BDT117.49" },
+    // { game: "Piggy Riches", winners: "-", payout: "-BDT117.49" },
+    // { game: "Mega Fortune", winners: "-", payout: "-BDT117.49" }
   ];
 
   function shuffle(array) {
@@ -183,7 +183,14 @@ const Home = () => {
                   </div>
                 </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor 
+              <div className="img_span_under_accordian">
+                  <img src={alllotteriesIcon}></img>
+                  <span>All Lotteries</span>
+                </div>
+                <div className="img_span_under_accordian">
+                  <img src={BCLotteryIcon}></img>
+                  <span>BC Lottery</span>
+                </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
@@ -194,7 +201,14 @@ const Home = () => {
                   </div>
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor
+              <div className="img_span_under_accordian">
+                  <img src={alllotteriesIcon}></img>
+                  <span>All Lotteries</span>
+                </div>
+                <div className="img_span_under_accordian">
+                  <img src={BCLotteryIcon}></img>
+                  <span>BC Lottery</span>
+                </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
@@ -227,7 +241,14 @@ const Home = () => {
                   </div>
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor
+              <div className="img_span_under_accordian">
+                  <img src={alllotteriesIcon}></img>
+                  <span>All Lotteries</span>
+                </div>
+                <div className="img_span_under_accordian">
+                  <img src={BCLotteryIcon}></img>
+                  <span>BC Lottery</span>
+                </div>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
@@ -253,7 +274,7 @@ const Home = () => {
             </div>
         </div>
 
-        <Modal size="lg" show={show} onHide={handleClose}>
+        <Modal className="for_spinner"  show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -270,14 +291,14 @@ const Home = () => {
           
           
         
-          <div class="one">1</div>
-          <div class="two">2</div>
-          <div class="three">3</div>
-          <div class="four">4</div>
-          <div class="five">5</div>
-          <div class="six">6</div>
-          <div class="seven">7</div>
-          <div class="eight">8</div>
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+          <div class="four"></div>
+          <div class="five"></div>
+          <div class="six"></div>
+          <div class="seven"></div>
+          <div class="eight"></div>
           {/* <div class="nine">9</div>
           <div class="ten">10</div> */}
       </div>
@@ -403,10 +424,11 @@ const Home = () => {
 
 <section className="top_banner">
 
-  <div className="for_desktopImg">
+  {/* <div className="for_desktopImg">
     <img src={forDesktop}></img>
-  </div>
+  </div> */}
 
+  <div className="main_right_badge_box">
   <div className="top_bage">
     <div>
       <span className="badge_text">Instant Download on your device</span>
@@ -429,8 +451,13 @@ const Home = () => {
               </span>
             </div>
   </div>
+  </div>
 
-  <div className="container making_full">
+  <div className="container making_full position-relative">
+  <div className="for_desktopImg">
+    {/* <img src={forDesktop}></img> */}
+    <img src={agt}></img>
+  </div>
     <div className="row making_full">
       <div className="col-6 col-md-4 position-relative">
         <div className="top_banner_left">
@@ -609,7 +636,7 @@ const Home = () => {
               }}
               breakpoints={{
                 990: {
-                  slidesPerView: 5.5,
+                  slidesPerView: 6.5,
                   spaceBetween: 10,
                 }
                 
@@ -1399,7 +1426,7 @@ const Home = () => {
               }}
               breakpoints={{
                 990: {
-                  slidesPerView: 5.5,
+                  slidesPerView: 6.5,
                   spaceBetween: 10,
                 }
               }}
@@ -1477,7 +1504,7 @@ const Home = () => {
               }}
               breakpoints={{
                 990: {
-                  slidesPerView: 5.5,
+                  slidesPerView: 6.5,
                   spaceBetween: 10,
                 }
               }}
@@ -1554,7 +1581,7 @@ const Home = () => {
               }}
               breakpoints={{
                 990: {
-                  slidesPerView: 5.5,
+                  slidesPerView: 6.5,
                   spaceBetween: 10,
                 }
               }}

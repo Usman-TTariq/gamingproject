@@ -54,7 +54,7 @@ const LoginForm = () => {
 
             <div className="text-center">
               <button className="google_signin">
-                <img src={googelIcon}></img>
+                <div className='google_icon_box'><img src={googelIcon}></img></div>
                 <span className="signin_google_text">Sign in with Google</span>
               </button>
             </div>

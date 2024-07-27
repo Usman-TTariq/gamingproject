@@ -9,9 +9,47 @@ import { Flag, footerArrowIcon, footerBarImg01, footerBarImg02, footerLogo } fro
 // import { useState } from "react";
 // import ReactFlagsSelect from "react-flags-select";
 
+import $ from 'jquery';
+
 import "./style.css"
 
 const Footer = () => {
+
+
+//   function setCountry(code){
+//     if(code || code==''){
+//         var text = $('a[cunt_code="'+code+'"]').html();
+//         $(".dropdown dt a span").html(text);
+//     }
+// }
+
+// $(".dropdown img.flag").addClass("flagvisibility");
+
+//         $(".dropdown dt a").click(function() {
+//             $(".dropdown dd ul").toggle();
+//         });
+
+//         $(".dropdown dd ul li a").click(function() {
+//             var text = $(this).html();
+//             $(".dropdown dt a span").html(text);
+//             $(".dropdown dd ul").hide();
+//             $("#result").html("Selected value is: " + getSelectedValue("country-select"));
+//         });
+
+//         function getSelectedValue(id) {
+//             return $("#" + id).find("dt a span.value").html();
+//         }
+
+//         $(document).bind('click', function(e) {
+//             var $clicked = $(e.target);
+//             if (! $clicked.parents().hasClass("dropdown"))
+//                 $(".dropdown dd ul").hide();
+//         });
+
+
+//         $("#flagSwitcher").click(function() {
+//             $(".dropdown img.flag").toggleClass("flagvisibility");
+//         });
 
   // const [selected, setSelected] = useState("");
 
@@ -126,10 +164,19 @@ const Footer = () => {
 
               <div>
 
-            {/* <ReactFlagsSelect
-                selected={selected}
-                onSelect={(code) => setSelected(code)}
-              /> */}
+              {/* <div class="wrapper">
+        <dl id="country-select" class="dropdown">
+          <dt><a href="javascript:void(0);"><span><span style={{backgroundPosition: "0px -1694px"}}></span><span>India</span><span>+91</span></span></a></dt>
+          <dd>
+            <ul style={{display: "none"}}>
+              <li><a cunt_code="+91" href="javascript:void(0);"><span style={{backgroundPosition: "0px -1694px"}}></span><span>India</span></a></li>
+              <li><a cunt_code="" href="javascript:void(0);"><span style={{backgroundPosition: "0px -1694px"}}></span><span>India-Tollfree</span></a></li>
+              <li><a cunt_code="+1" href="javascript:void(0);"><span style={{backgroundPosition: "0px -44px"}}></span><span>United States</span></a></li>
+             
+            </ul>
+          </dd>
+        </dl>
+        </div> */}
                 
 
               </div>

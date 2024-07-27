@@ -55,40 +55,39 @@ const RegisterForm = () => {
                 <CustomButton
                   type="button"
                   className="register_actionBtn modal_signin_actionBtn w-100"
-                  text="Sign In"
+                  text="Sign Up"
                   // onClick={() => navigate("/")}
                 />
               </div>
 
-              <div>
+              {/* <div>
             <CustomButton
                   type="button"
                   className="forgot_password_actionBtn w-100"
                   text="Forgot Password"
-                  // onClick={() => navigate("/")}
                 />
-            </div>
+            </div> */}
 
-            <div className="text-center">
-              <span className="dont_have_an_account">Don't have an account? </span>
+            <div className="text-center pt-3">
+              <span className="dont_have_an_account">Already have an account? </span>
               <CustomButton
                   type="button"
                   className="modal_register_actionBtn"
-                  text="Register an Account"
+                  text="Sign In"
                   // onClick={() => navigate("/")}
                 />
             </div>
 
             <div className="login_directly">
               <span className="white_border_line"></span>
-              <span className="login_directly_text">Log in directly with</span>
+              <span className="login_directly_text">Sign up directly with</span>
               <span className="white_border_line"></span>
             </div>
 
             <div className="text-center">
               <button className="google_signin">
-                <img src={googelIcon}></img>
-                <span className="signin_google_text">Sign in with Google</span>
+                <div className='google_icon_box'><img src={googelIcon}></img></div>
+                <span className="signin_google_text">Sign up with Google</span>
               </button>
             </div>
 
