@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-// import { facebookIcon, twitterIcon, instragramIcon, linkedinIcon, phoneIcon, mailIcon, locationIcon, paymentMethodsImg } from "../../../asserts/images";
 
-import { Flag, footerArrowIcon, footerBarImg01, footerBarImg02, footerLogo } from "../../../asserts/images";
-// import { useState } from "react";
-// import ReactFlagsSelect from "react-flags-select";
+import { Flag, flag01, flag02, flag03, flag04, footerArrowIcon, footerBarImg01, footerBarImg02, footerLogo, googelIcon } from "../../../asserts/images";
+import { useState } from "react";
 
 import $ from 'jquery';
 
@@ -15,43 +13,40 @@ import "./style.css"
 
 const Footer = () => {
 
+  const [showOptions, setShowOptions] = useState(false);
 
-//   function setCountry(code){
-//     if(code || code==''){
-//         var text = $('a[cunt_code="'+code+'"]').html();
-//         $(".dropdown dt a span").html(text);
-//     }
-// }
-
-// $(".dropdown img.flag").addClass("flagvisibility");
-
-//         $(".dropdown dt a").click(function() {
-//             $(".dropdown dd ul").toggle();
-//         });
-
-//         $(".dropdown dd ul li a").click(function() {
-//             var text = $(this).html();
-//             $(".dropdown dt a span").html(text);
-//             $(".dropdown dd ul").hide();
-//             $("#result").html("Selected value is: " + getSelectedValue("country-select"));
-//         });
-
-//         function getSelectedValue(id) {
-//             return $("#" + id).find("dt a span.value").html();
-//         }
-
-//         $(document).bind('click', function(e) {
-//             var $clicked = $(e.target);
-//             if (! $clicked.parents().hasClass("dropdown"))
-//                 $(".dropdown dd ul").hide();
-//         });
+  const [selectedOption, setSelectedOption] = useState({
+    imgSrc: flag03,
+    text: 'English',
+  });
 
 
-//         $("#flagSwitcher").click(function() {
-//             $(".dropdown img.flag").toggleClass("flagvisibility");
-//         });
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!e.target.closest('.custom-select')) {
+        setShowOptions(false);
+      }
+    };
 
-  // const [selected, setSelected] = useState("");
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+
+  const toggleOptions = () => {
+    setShowOptions(!showOptions);
+  };
+
+
+  const handleOptionClick = (imgSrc, text) => {
+    setSelectedOption({ imgSrc, text });
+    setShowOptions(false);
+  };
+
+
+  const [selected, setSelected] = useState("");
 
   return (
     <>
@@ -161,24 +156,38 @@ const Footer = () => {
             <h6 className="footer_links_heading">
               Language
             </h6>
-
               <div>
-
-              {/* <div class="wrapper">
-        <dl id="country-select" class="dropdown">
-          <dt><a href="javascript:void(0);"><span><span style={{backgroundPosition: "0px -1694px"}}></span><span>India</span><span>+91</span></span></a></dt>
-          <dd>
-            <ul style={{display: "none"}}>
-              <li><a cunt_code="+91" href="javascript:void(0);"><span style={{backgroundPosition: "0px -1694px"}}></span><span>India</span></a></li>
-              <li><a cunt_code="" href="javascript:void(0);"><span style={{backgroundPosition: "0px -1694px"}}></span><span>India-Tollfree</span></a></li>
-              <li><a cunt_code="+1" href="javascript:void(0);"><span style={{backgroundPosition: "0px -44px"}}></span><span>United States</span></a></li>
-             
-            </ul>
-          </dd>
-        </dl>
-        </div> */}
-                
-
+              <div className="custom-select">
+                <button className="select-button" onClick={toggleOptions}>
+                  <img src={selectedOption.imgSrc} className="flagImages"></img>
+                  {selectedOption.text || 'Select an option'}
+                </button>
+                {showOptions && (
+                  <div className="options">
+                    <div
+                      className="option"
+                      onClick={() => handleOptionClick(flag02, 'German')}
+                    >
+                      <img src={flag02} className="flagImages"></img>
+                      German
+                    </div>
+                    <div
+                      className="option"
+                      onClick={() => handleOptionClick(flag01, 'French')}
+                    > 
+                      <img src={flag01} className="flagImages"></img>
+                      French
+                    </div>
+                    <div
+                      className="option"
+                      onClick={() => handleOptionClick(flag04, 'Chinese')}
+                    >
+                      <img src={flag04} className="flagImages"></img>
+                      Chinese
+                    </div>
+                  </div>
+                )}
+              </div>
               </div>
 
 

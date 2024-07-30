@@ -7,6 +7,62 @@ footer{
     padding: 50px 0px;
 }
 
+/* .custom-select::-webkit-inner-spin-button,
+.custom-select::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+.custom-select{
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    padding: 0px;
+}
+
+.select-button{
+    color: #E9EAEB;
+    border: none;
+    background-color: transparent;
+    padding: 10px 70px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.flagImages{
+    width: 37px;
+    height: 27px;
+}
+
+.options{
+    background-color: #141416;
+    width: 184px;
+    padding: 0px;
+    position: relative;
+}
+
+.select-button::after{
+    content: '\f107';
+    font-family: "fontawesome";
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    color: #E5E6E8;
+}
+
+.option:hover{
+    background-color: #2b2b2e !important;
+}
+
 .footer_bottom_bar{
     border-top: 1px solid #767676;
     border-bottom: none;

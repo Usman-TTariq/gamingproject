@@ -98,6 +98,12 @@ import topgames04 from "./topgames04.png";
 import spinWheelBtn from "./wheelspinbtn.png";
 import wheelBorder from "./wheelborder.png";
 import agt from "./AGT.png";
+import spinner_head_bk from "./modal_spin_bk.png";
+import flag01 from "./flag02.png";
+import flag02 from "./flag03.png";
+import flag03 from "./flag04.png";
+import flag04 from "./flag05.png";
+import avator from "./avator.png";
 
 export {
     cricketIcon,
@@ -198,6 +204,11 @@ export {
     topgames04,
     spinWheelBtn,
     wheelBorder,
-    agt
-    // searchIcon
+    agt,
+    spinner_head_bk,
+    flag01,
+    flag02,
+    flag03,
+    flag04,
+    avator
 }

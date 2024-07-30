@@ -2,7 +2,7 @@ import React from "react";
 import UserLayout from "../../components/Layout/userlayout";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { agt, alllotteriesIcon, avator, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, flag01, flag02, flag03, flag04, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, ModalLeftImg, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, spinIcon, spinner_head_bk, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
+import { agt, alllotteriesIcon, avator, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, flag01, flag02, flag03, flag04, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, spinIcon, spinner_head_bk, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
 import { Autoplay, Pagination } from 'swiper/modules';
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -13,16 +13,11 @@ import Accordion from 'react-bootstrap/Accordion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import $ from 'jquery';
 import Modal from 'react-bootstrap/Modal';
-import LoginForm from "../../components/LoginForm";
-import RegisterForm from "../../components/RegisterForm";
 import SidebarMain from "../../components/Sidebar";
 import {
   faStar
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
-import CustomLoader from "../../components/CustomLoader";
-import DesktopTable from "../../components/DesktopTable";
-
 
 const Home = () => {
 
@@ -154,35 +149,8 @@ const Home = () => {
   };
 
 
-  const [show01, setShow01] = useState(false);
-
-  const handleClose01 = () => setShow01(false);
-  const handleShow01 = () => setShow01(true);
-
-  const [activeSectionRegister, setActiveSectionRegister] = useState('Accountregister');
-
-  const handleactiveSectionRegister = (sectionRegister) => {
-    setActiveSectionRegister(sectionRegister);
-  }
-
-
-  const [isLoading, setIsLoading] = useState(false);
-  const [showTable, setShowTable] = useState(true);
-
-  const handleClick = () => {
-    setIsLoading(true);
-    setShowTable(false);
-
-    // Simulate data fetching
-    setTimeout(() => {
-      setIsLoading(false);
-      setShowTable(true);
-    }, 1000); // 2 seconds delay
-  };
-
   return (
     <>
-       
 
         <SidebarMain/>
 
@@ -244,65 +212,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="top_banner">
-
-        {/* <div className="for_desktopImg">
-          <img src={forDesktop}></img>
-        </div> */}
-
-        <div className="main_right_badge_box">
-        <div className="top_bage">
-          <div>
-            <span className="badge_text">Instant Download on your device</span>
-          </div>
-          <div className="all_stars">
-                    <span className="star_icon star_icon_extra">
-                      <FontAwesomeIcon icon={faStar} />
-                    </span>
-                    <span className="star_icon star_icon_extra">
-                      <FontAwesomeIcon icon={faStar} />
-                    </span>
-                    <span className="star_icon star_icon_extra">
-                      <FontAwesomeIcon icon={faStar} />
-                    </span>
-                    <span className="star_icon star_icon_extra">
-                      <FontAwesomeIcon icon={faStar} />
-                    </span>
-                    <span className="star_icon star_icon_extra">
-                      <FontAwesomeIcon icon={faStar} />
-                    </span>
-                  </div>
-        </div>
-        </div>
-
-        <div className="container making_full position-relative">
-        <div className="for_desktopImg">
-          <img src={agt}></img>
-        </div>
-          <div className="row making_full">
-            <div className="col-6 col-md-4 position-relative">
-              <div className="top_banner_left">
-                <p className="starting_para m-0">SIGN UP & <span className="green_text">GET</span> REWARD UP TO</p>
-
-                <h4 className="price_money">INR 50,000</h4>
-
-                <div>
-                  <button className="sign_up_actionBtn" onClick={handleShow01}>SIGN UP NOW</button>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 making_none">
-              <div>
-                {/* <img src={changeBannerImg} alt="cg" className="img-fluid football_team_img"></img> */}
-                <img src={teamImg} className="football_team_img"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section className="trending_now_section trending_now_second">
+      <section className="trending_cricket_section">
         <div className="container">
           <div className="row">
               <div className="col-md-12 pr-0">
@@ -314,6 +224,18 @@ const Home = () => {
                     spaceBetween={12}
                     pagination={{
                       clickable: true,
+
+                    }}
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                      },
+                      1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 12,
+                      }
+                      
                     }}
                     modules={[]}
                     className="mySwiper"
@@ -395,84 +317,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="main_promocode_section">
+      
 
-        <div className="container pr-0">
-
-            <div className="promocode_section">
-
-            <div className="promo_arrow_div">
-              <img src={promoArrow}></img>
-            </div>
-
-            <div className="promo_arrow_div">
-              <img src={promoArrow}></img>
-            </div>
-
-            <div className="row">
-              <div className="col-md-5">
-                  <div>
-                    <h4 className="promo_title m-0">Promo</h4>
-
-                    <p className="have_a_promo_code_text">Have a promo code?</p>
-
-                    <div class="mb-2">
-                      <input type="text" class="form-control promo_input" id="" placeholder="Type it here"></input>
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-
-            </div>
-
-            
-        </div>
-      </section>
-
-      <section className="trending_now_section">
-        <div className="container">
-          <div className="row">
-              <div className="col-md-12 pr-0">
-                <div className="trendingNowMain">
-                  <div className="providersImg trending_with_fire pb-2">
-                    <img src={fireIcon} alt="fire"></img>
-                  <h6 className="trending_now_heading m-0">Trending Now</h6>
-                  </div>
-
-                  <div className="trending_now_slides">
-                  <Swiper
-                    slidesPerView={3.4}
-                    spaceBetween={8}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    breakpoints={{
-                      990: {
-                        slidesPerView: 6.5,
-                        spaceBetween: 10,
-                      }
-                      
-                    }}
-                    modules={[]}
-                    className="mySwiper"
-                  >
-                    {
-                      trendingImages.map((trendingImg) => 
-                        <SwiperSlide>
-                          <div className="trendingNowImg">
-                            <img src={trendingImg} alt="trending" className="img-fluid"></img>
-                          </div>
-                        </SwiperSlide>
-                      )
-                    }
-                  </Swiper>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
+      
 
 
       <section className="cricket_card_section">
@@ -484,7 +331,7 @@ const Home = () => {
                     <div className="dropdown_with_grid_search">
                       <div className="provider_dropdown">
                         <button className="dropdown_actionBtn">
-                          <span className="providers_title m-0">Providers</span>
+                          <span className="provider_text">Providers</span>
                           {/* <img src={dropdownArrow} alt="dropdown"></img> */}
                         </button>
                       </div>
@@ -1235,7 +1082,7 @@ const Home = () => {
                         </div>
 
                         <div>
-                          <button className="top_games_actionBtn" onClick={handleShow01}>SIGN UP NOW</button>
+                          <button className="top_games_actionBtn">SIGN UP NOW</button>
                         </div>
                       </div>
                     </div>
@@ -1254,46 +1101,6 @@ const Home = () => {
         </div>
     </div>
   </div>
-
-  <Modal show={show01} onHide={handleClose01} 
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered>
-        <div className="row">
-        <div className="col-md-6 making_it_hide">
-            <img src={ModalLeftImg} className="modal_left_img img-fluid"></img>
-          </div>
-            <div className="col-md-6 col-12 align-self-center">
-            <Modal.Header closeButton>
-          <Modal.Title className="w-100">
-            <div className="modal_header_tabs">
-              {/* <h6 class="trending_now_heading text-center m-0">Sign In</h6> */}
-              
-              <button className={`modal_tab_btn ${activeSectionRegister === "modalLogin" ? "active_tab" : "" }`} onClick={() => handleactiveSectionRegister('modalLogin')}>Login</button>
-              <button className={`modal_tab_btn ${activeSectionRegister === "Accountregister" ? "active_tab" : "" }`} onClick={() => handleactiveSectionRegister('Accountregister')}>Register</button>
-              
-            </div>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="pt-0">
-
-        {activeSectionRegister === 'Accountregister' ? <RegisterForm/> : <LoginForm/>}
-          
-            {/* <LoginForm/> */}
-
-            {/* <RegisterForm/> */}
-
-          </Modal.Body>
-        <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button> */}
-          
-        </Modal.Footer>
-            </div>
-        </div>
-      </Modal>
-
 </section>
 
 
@@ -1353,19 +1160,107 @@ const Home = () => {
             <h4 className="bet_and_race_title">Latest bet & Race</h4>
 
             <div className="bet_race_tabs">
-              <button className="bet_race_actionBtn" onClick={handleClick}>Latest bets</button>
-              <button className="bet_race_actionBtn" onClick={handleClick}>High rollers</button>
-              <button className="bet_race_actionBtn" onClick={handleClick}>Wager contest</button>
+              <button className="bet_race_actionBtn">Latest bets</button>
+              <button className="bet_race_actionBtn">High rollers</button>
+              <button className="bet_race_actionBtn">Wager contest</button>
             </div>
 
             <div className="bet_and_race_table_box">
-
-            {isLoading && <CustomLoader />}
-            {showTable && <DesktopTable />}
-
-            {/* <CustomLoader /> */}
-
-              {/* <DesktopTable/> */}
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Game</th>
+                  <th scope="col">Player</th>
+                  <th scope="col">Bet Amount</th>
+                  <th scope="col">Multiplier</th>
+                  <th scope="col">Profit Amount</th>
+                </tr>
+              </thead>
+              <tbody className="table-body">
+                {/* <tr>
+                  <td>
+                    <img src={betIcon01} className="game_table_img"></img>
+                    Wild Bounty Showdown
+                  </td>
+                  <td>Dagfbdgfprac</td>
+                  <td>
+                    6.00
+                    <img src={betAmount01} alt="etherum" className="game_table_img"></img>
+                  </td>
+                  <td>0.00x</td>
+                  <td>
+                    -6.00
+                  <img src={betAmount01} alt="etherum" className="game_table_img"></img>
+                  </td>
+                </tr> */}
+                {/* <tr>
+                  <td>
+                  <img src={betIcon01} className="game_table_img"></img>
+                    3 Hot Chillies
+                  </td>
+                  <td>Cruz94</td>
+                  <td>
+                    16.411
+                    <img src={betAmount02} alt="etherum" className="game_table_img"></img>
+                  </td>
+                  <td>0.00x</td>
+                  <td>
+                    -6.00
+                  <img src={betAmount02} alt="etherum" className="game_table_img"></img>
+                  </td>
+                </tr> */}
+                {/* <tr>
+                  <td>
+                  <img src={betIcon01} className="game_table_img"></img>
+                    Twist
+                  </td>
+                  <td>Elfwadbbprac</td>
+                  <td>
+                    6.00
+                    <img src={betAmount01} alt="etherum" className="game_table_img"></img>
+                  </td>
+                  <td>0.00x</td>
+                  <td>
+                    -6.00
+                  <img src={betAmount01} alt="etherum" className="game_table_img"></img>
+                  </td>
+                </tr> */}
+                {/* <tr>
+                
+                  <td>
+                  <img src={betIcon01} className="game_table_img"></img>
+                    Madame Destiny Megaw...
+                  </td>
+                  <td>cestmoi</td>
+                  <td>
+                    16.411
+                    <img src={betAmount02} alt="etherum" className="game_table_img"></img>
+                  </td>
+                  <td>0.00x</td>
+                  <td>
+                    -6.00
+                  <img src={betAmount02} alt="etherum" className="game_table_img"></img>
+                  </td>
+                </tr> */}
+                {/* <tr>
+                  <td>
+                  <img src={betIcon01} className="game_table_img"></img>
+                  Fire in the Hole 2
+                  </td>
+                  <td>WnTnKtoG</td>
+                  <td>
+                    16.411
+                    <img src={betAmount03} alt="etherum" className="game_table_img"></img>
+                  </td>
+                  <td>0.00x</td>
+                  <td>
+                    -6.00
+                  <img src={betAmount03} alt="etherum" className="game_table_img"></img>
+                  </td>
+                </tr> */}
+                
+              </tbody>
+            </table>
             </div>
 
           </div>
@@ -1391,7 +1286,7 @@ const Home = () => {
           <p className="register-now-para">Deposit bonus up to INR20,000</p>
 
           <div>
-            <button className="register_now_instantly_actinBtn" onClick={handleShow01}>SIGN UP NOW</button>
+            <button className="register_now_instantly_actinBtn">SIGN UP NOW</button>
           </div>
         </div>
 
@@ -1625,8 +1520,6 @@ const Home = () => {
 </section>
 
 <section className="community_section removing_border">
-
-
   <div className="container">
     <div className="making_border">
     <div className="row">

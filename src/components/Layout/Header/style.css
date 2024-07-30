@@ -150,23 +150,50 @@
 
 .signin_actionBtn{
     background-color: transparent !important;
-    border: none !important;
+    border: 1px solid transparent !important;
     color: #EAEBEC !important;
     font-size: 18px !important;
     padding: 12px 20px !important;
     /* font-weight: 700 !important; */
     font-family: 'proximaBold';
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.header_desktop_tabs .single_tab:focus{
+    padding: 9px 15px !important;
+    background-color: #25252a !important;
+    border-radius: 6px !important;
+}
+
+.tabbing_btn{
+    padding: 9px 15px !important;
+    background-color: #25252a !important;
+    border-radius: 6px !important;
+}
+
+.signin_actionBtn:hover{
+    background-color: #fff !important;
+    border: 1px solid #8259FF !important;
+    color: #8259FF !important;
 }
 
 .register_actionBtn{
     background-color: #8259FF !important;
-    border: none !important;
+    border: 1px solid #8259FF !important;
     color: #fff !important;
     font-size: 18px !important;
     padding: 12px 20px !important;
     /* font-weight: 700 !important; */
     border-radius: 4px !important;
     font-family: 'proximaBold';
+    transition: all 0.2s ease-in-out;
+}
+
+.register_actionBtn:hover{
+    color: #8259FF !important;
+    background-color: #fff !important;
+    border: 1px solid #8259FF !important;
 }
 
 /* nav{
