@@ -104,6 +104,7 @@ import flag02 from "./flag03.png";
 import flag03 from "./flag04.png";
 import flag04 from "./flag05.png";
 import avator from "./avator.png";
+import modal_coins from "./coins-removebg.png";
 
 export {
     cricketIcon,
@@ -210,5 +211,6 @@ export {
     flag02,
     flag03,
     flag04,
-    avator
+    avator,
+    modal_coins
 }

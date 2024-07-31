@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { agt, alllotteriesIcon, avator, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, flag01, flag02, flag03, flag04, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, ModalLeftImg, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, spinIcon, spinner_head_bk, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
 import { Autoplay, Pagination } from 'swiper/modules';
-import "./style.css";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -14,18 +13,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import $ from 'jquery';
 import Modal from 'react-bootstrap/Modal';
 import SidebarMain from "../../components/Sidebar";
-import LoginForm from "../../components/LoginForm";
-import RegisterForm from "../../components/RegisterForm";
 import CustomLoader from "../../components/CustomLoader";
 import DesktopTable from "../../components/DesktopTable";
 import {
   faStar
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
+import LoginForm from "../../components/LoginForm";
+import RegisterForm from "../../components/RegisterForm";
 import MobileTabs from "../../components/mobileTabs";
 import MobileTable from "../../components/MobileTable";
 
-const CricketMain = () => {
+const LobbyPage = () => {
 
   const data = [
     { game: "Wild Bounty Showdown", player: "Player1", bet: 6.00, multiplier: "1.5x", profit: 3.00 },
@@ -179,7 +178,6 @@ const CricketMain = () => {
     }, 1000); // 2 seconds delay
   };
 
-
   return (
     <>
 
@@ -189,6 +187,7 @@ const CricketMain = () => {
       <div className="whole_content">
 
       <UserLayout>
+
 
       <Modal show={show01} onHide={handleClose01} 
       size="lg"
@@ -394,530 +393,7 @@ const CricketMain = () => {
       
 
 
-      <section className="cricket_card_section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="main_cards">
-
-                    <div className="dropdown_with_grid_search">
-                      <div className="provider_dropdown">
-                        <button className="dropdown_actionBtn">
-                          <span className="provider_text">Providers</span>
-                          {/* <img src={dropdownArrow} alt="dropdown"></img> */}
-                        </button>
-                      </div>
-                      <div className="grid_and_searchbar">
-                      <div className="search_button_box">
-                        <div className="input-wrapper">
-                          <button className="icon">
-                          <img src={searchIcon} alt="sreact"></img>
-                          </button>
-                          <input type="text" name="text" className="input" placeholder="search.." />
-                        </div>
-                        </div>
-                        {/* <button className="grid_actionBtn">
-                          <img src={gridIcon} alt="grid"></img>
-                        </button> */}
-                        {/* <button className="grid_actionBtn">
-                          <img src={searchIcon} alt="grid"></img>
-                        </button> */}
-
-                      </div>
-                    </div>
-
-                  <div className="cricket_heading_with_date">
-                      <span className="cricket_title">Cricket</span>
-                      <span className="cricket_date">Mon, 24 Jun</span>
-                  </div>
-              </div>
-            </div>
-
-            <div className="col-md-12 pr-0 pb-4">
-              <div className="cricket_cards_slides">
-              <Swiper
-                    slidesPerView={2.1}
-                    spaceBetween={10}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    breakpoints={{
-                      767: {
-                        slidesPerView: 3.1,
-                        spaceBetween: 15,
-                      }
-                    }}
-                    modules={[]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide>
-                      <div className="cricket_box">
-                        <div className="cricket_box_first_div">
-                          <div className="">
-                            <span className="super_eight">Super Eight <span className="white_circle"></span> T20 </span>
-                            <span className="matches_number"><span>50 </span>of <span>55</span></span>
-                          </div>
-                          <div>
-                            <span className="current_match_date">Mon, 24 Jun</span>
-                          </div>
-                        </div>
-                        <div className="cricket_box_second_div">
-                          <div className="">
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">West Indies</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date">
-                              <span><span>135</span>/<span>8</span> <span>(20)</span></span>
-                            </span> 
-                            </div>
-                        </div>
-
-                        <div className="cricket_box_second_div align-items-start">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">South Africa</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date running_match">
-                              <span><span>135</span>/<span>8</span> <span>(<span>16.1</span>/<span>17</span>)</span></span>
-                            </span> 
-
-                            <span className="current_match_date running_match block_target text-right">
-                                Target<span>123</span>
-                              </span>
-                            </div>
-                        </div>
-                        <div className="match_winning_score">
-                          <span className="cricket_team_name">
-                            <span>SA </span>
-                            won by <span>3 </span>
-                            wickets (<span>5 </span> balls left)
-                          </span>
-                          <span className="cricket_team_name dls">(DLS method)</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="cricket_box">
-                        <div className="cricket_box_first_div">
-                          <div className="">
-                            <span className="super_eight">Super Eight <span className="white_circle"></span> T20 </span>
-                            <span className="matches_number"><span>50 </span>of <span>55</span></span>
-                          </div>
-                          <div>
-                            <span className="current_match_date">Mon, 24 Jun</span>
-                          </div>
-                        </div>
-                        <div className="cricket_box_second_div">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">West Indies</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date">
-                              <span><span>135</span>/<span>8</span> <span>(20)</span></span>
-                            </span> 
-                            </div>
-                        </div>
-
-                        <div className="cricket_box_second_div align-items-start">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">South Africa</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date running_match">
-                              <span><span>135</span>/<span>8</span> <span>(<span>16.1</span>/<span>17</span>)</span></span>
-                            </span> 
-
-                            <span className="current_match_date running_match block_target text-right">
-                                Target<span>123</span>
-                              </span>
-                            </div>
-                        </div>
-                        <div className="match_winning_score">
-                          <span className="cricket_team_name">
-                            <span>SA </span>
-                            won by <span>3 </span>
-                            wickets (<span>5 </span> balls left)
-                          </span>
-                          <span className="cricket_team_name dls">(DLS method)</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="cricket_box">
-                        <div className="cricket_box_first_div">
-                          <div className="">
-                            <span className="super_eight">Super Eight <span className="white_circle"></span> T20 </span>
-                            <span className="matches_number"><span>50 </span>of <span>55</span></span>
-                          </div>
-                          <div>
-                            <span className="current_match_date">Mon, 24 Jun</span>
-                          </div>
-                        </div>
-                        <div className="cricket_box_second_div">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">West Indies</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date">
-                              <span><span>135</span>/<span>8</span> <span>(20)</span></span>
-                            </span> 
-                            </div>
-                        </div>
-
-                        <div className="cricket_box_second_div align-items-start">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">South Africa</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date running_match">
-                              <span><span>135</span>/<span>8</span> <span>(<span>16.1</span>/<span>17</span>)</span></span>
-                            </span> 
-
-                            <span className="current_match_date running_match block_target text-right">
-                                Target<span>123</span>
-                              </span>
-                            </div>
-                        </div>
-                        <div className="match_winning_score">
-                          <span className="cricket_team_name">
-                            <span>SA </span>
-                            won by <span>3 </span>
-                            wickets (<span>5 </span> balls left)
-                          </span>
-                          <span className="cricket_team_name dls">(DLS method)</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="cricket_box">
-                        <div className="cricket_box_first_div">
-                          <div className="">
-                            <span className="super_eight">Super Eight <span className="white_circle"></span> T20 </span>
-                            <span className="matches_number"><span>50 </span>of <span>55</span></span>
-                          </div>
-                          <div>
-                            <span className="current_match_date">Mon, 24 Jun</span>
-                          </div>
-                        </div>
-                        <div className="cricket_box_second_div">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">West Indies</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date">
-                              <span><span>135</span>/<span>8</span> <span>(20)</span></span>
-                            </span> 
-                            </div>
-                        </div>
-
-                        <div className="cricket_box_second_div align-items-start">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">South Africa</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date running_match">
-                              <span><span>135</span>/<span>8</span> <span>(<span>16.1</span>/<span>17</span>)</span></span>
-                            </span> 
-
-                            <span className="current_match_date running_match block_target text-right">
-                                Target<span>123</span>
-                              </span>
-                            </div>
-                        </div>
-                        <div className="match_winning_score">
-                          <span className="cricket_team_name">
-                            <span>SA </span>
-                            won by <span>3 </span>
-                            wickets (<span>5 </span> balls left)
-                          </span>
-                          <span className="cricket_team_name dls">(DLS method)</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="cricket_box">
-                        <div className="cricket_box_first_div">
-                          <div className="">
-                            <span className="super_eight">Super Eight <span className="white_circle"></span> T20 </span>
-                            <span className="matches_number"><span>50 </span>of <span>55</span></span>
-                          </div>
-                          <div>
-                            <span className="current_match_date">Mon, 24 Jun</span>
-                          </div>
-                        </div>
-                        <div className="cricket_box_second_div">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">West Indies</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date">
-                              <span><span>135</span>/<span>8</span> <span>(20)</span></span>
-                            </span> 
-                            </div>
-                        </div>
-
-                        <div className="cricket_box_second_div align-items-start">
-                          <div>
-                            <div className="team_name_with_flag">
-                              <div className="cricket_team_flag">
-                                <img src={cricketteamflag} alt="flag"></img>
-                              </div>
-                              <div>
-                                <span className="cricket_team_name">South Africa</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <span className="current_match_date running_match">
-                              <span><span>135</span>/<span>8</span> <span>(<span>16.1</span>/<span>17</span>)</span></span>
-                            </span> 
-
-                            <span className="current_match_date running_match block_target text-right">
-                                Target<span>123</span>
-                              </span>
-                            </div>
-                        </div>
-                        <div className="match_winning_score">
-                          <span className="cricket_team_name">
-                            <span>SA </span>
-                            won by <span>3 </span>
-                            wickets (<span>5 </span> balls left)
-                          </span>
-                          <span className="cricket_team_name dls">(DLS method)</span>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-              </div>
-
-              <div className="single_scorebox_with_btns">
-                    <div className="scorebox_left_part">
-                    <div className="bat_and_flag">
-                        <div>
-                          <img src={batBall} alt="batBall"></img>
-                        </div>
-                        <div className="scorebox_flag">
-                          <img src={cricketteamflag} alt="flag"></img>
-                        </div>
-                        <div className="scorebox_content">
-                          <span>Gloucestershire</span>
-                          <span> Vs </span>
-                          <span>Kent</span>
-                        </div>
-                      </div>
-                      <span className="scorebox_date">05 Jul 19:00</span>
-                    </div>
-                    <div className="scorebox_right_part">
-                      <button>1.75</button>
-                      <button>1.84</button>
-                      <button>-</button>
-                      <button>-</button>
-                      <button>2.2</button>
-                      <button>2.34</button>
-                    </div>
-              </div>
-
-              <div className="single_scorebox_with_btns">
-                    <div className="scorebox_left_part">
-                    <div className="bat_and_flag">
-                        <div>
-                          <img src={batBall} alt="batBall"></img>
-                        </div>
-                        <div className="scorebox_flag">
-                          <img src={cricketteamflag} alt="flag"></img>
-                        </div>
-                        <div className="scorebox_content">
-                          <span>Gloucestershire</span>
-                          <span> Vs </span>
-                          <span>Kent</span>
-                        </div>
-                      </div>
-                      <span className="scorebox_date">05 Jul 19:00</span>
-                    </div>
-                    <div className="scorebox_right_part">
-                      <button>1.75</button>
-                      <button>1.84</button>
-                      <button>-</button>
-                      <button>-</button>
-                      <button>2.2</button>
-                      <button>2.34</button>
-                    </div>
-              </div>
-
-              <div className="single_scorebox_with_btns">
-                    <div className="scorebox_left_part">
-                    <div className="bat_and_flag">
-                        <div className="invisible">
-                          <img src={batBall} alt="batBall"></img>
-                        </div>
-                        <div className="scorebox_flag invisible">
-                          <img src={cricketteamflag} alt="flag"></img>
-                        </div>
-                        <div className="scorebox_content">
-                          <span>Gloucestershire</span>
-                          <span> Vs </span>
-                          <span>Kent</span>
-                        </div>
-                      </div>
-                      <span className="scorebox_date">05 Jul 19:00</span>
-                    </div>
-                    <div className="scorebox_right_part">
-                      <button>1.75</button>
-                      <button>1.84</button>
-                      <button>-</button>
-                      <button>-</button>
-                      <button>2.2</button>
-                      <button>2.34</button>
-                    </div>
-              </div>
-
-              <div className="single_scorebox_with_btns">
-                    <div className="scorebox_left_part">
-                    <div className="bat_and_flag">
-                        <div className="invisible">
-                          <img src={batBall} alt="batBall"></img>
-                        </div>
-                        <div className="scorebox_flag invisible">
-                          <img src={cricketteamflag} alt="flag"></img>
-                        </div>
-                        <div className="scorebox_content">
-                          <span>Gloucestershire</span>
-                          <span> Vs </span>
-                          <span>Kent</span>
-                        </div>
-                      </div>
-                      <span className="scorebox_date">05 Jul 19:00</span>
-                    </div>
-                    <div className="scorebox_right_part">
-                      <button>1.75</button>
-                      <button>1.84</button>
-                      <button>-</button>
-                      <button>-</button>
-                      <button>2.2</button>
-                      <button>2.34</button>
-                    </div>
-              </div>
-
-              <div className="single_scorebox_with_btns">
-                    <div className="scorebox_left_part">
-                    <div className="bat_and_flag">
-                        <div className="invisible">
-                          <img src={batBall} alt="batBall"></img>
-                        </div>
-                        <div className="scorebox_flag invisible">
-                          <img src={cricketteamflag} alt="flag"></img>
-                        </div>
-                        <div className="scorebox_content">
-                          <span>Gloucestershire</span>
-                          <span> Vs </span>
-                          <span>Kent</span>
-                        </div>
-                      </div>
-                      <span className="scorebox_date">05 Jul 19:00</span>
-                    </div>
-                    <div className="scorebox_right_part">
-                      <button>1.75</button>
-                      <button>1.84</button>
-                      <button>-</button>
-                      <button>-</button>
-                      <button>2.2</button>
-                      <button>2.34</button>
-                    </div>
-              </div>
-
-              <div className="single_scorebox_with_btns">
-                    <div className="scorebox_left_part">
-                    <div className="bat_and_flag">
-                        <div className="invisible">
-                          <img src={batBall} alt="batBall"></img>
-                        </div>
-                        <div className="scorebox_flag invisible">
-                          <img src={cricketteamflag} alt="flag"></img>
-                        </div>
-                        <div className="scorebox_content">
-                          <span>Gloucestershire</span>
-                          <span> Vs </span>
-                          <span>Kent</span>
-                        </div>
-                      </div>
-                      <span className="scorebox_date">05 Jul 19:00</span>
-                    </div>
-                    <div className="scorebox_right_part">
-                      <button>1.75</button>
-                      <button>1.84</button>
-                      <button>-</button>
-                      <button>-</button>
-                      <button>2.2</button>
-                      <button>2.34</button>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       <section className="game_providers-section">
         <div className="container">
@@ -1238,7 +714,7 @@ const CricketMain = () => {
             </div>
 
             <div className="bet_and_race_table_box">
-            
+
             {isLoading && <CustomLoader />}
             {showTable && <DesktopTable />}
 
@@ -1497,4 +973,4 @@ const CricketMain = () => {
   );
 };
 
-export default CricketMain;
+export default LobbyPage;

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import { alllotteriesIcon, avator, BCLotteryIcon, betAmount01, betAmount02, bonusIcon, dailyContestIcon, lotteryIcon, popularIcon01, promotionsIcon, questIcon, raffleIcon, sidebarCasinoIcon, spinIcon, sportsIcon, updownIcon, vipClubICon, wheelBorder } from '../../asserts/images';
+import { Link, useNavigate } from 'react-router-dom';
+import { alllotteriesIcon, avator, BCLotteryIcon, betAmount01, betAmount02, bonusIcon, dailyContestIcon, lotteryIcon, modal_coins, popularIcon01, promotionsIcon, questIcon, raffleIcon, sidebarCasinoIcon, spinIcon, sportsIcon, updownIcon, vipClubICon, wheelBorder } from '../../asserts/images';
 import { Accordion } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 
@@ -51,6 +52,8 @@ const SidebarMain = () => {
     setShowOptions(false);
   };
 
+  const navigate = useNavigate();
+
 
   return (
     <>
@@ -58,7 +61,9 @@ const SidebarMain = () => {
     <div className="sidebar">
         <div className="sidebar_content">
           <div>
-          <h4 class="logo_title sidebar_title m-0">LORIM</h4>
+            <Link className='sidebarLink' to="/">
+              <h4 class="logo_title sidebar_title m-0" >LORIM</h4>
+              </Link>
           </div>
 
           <div className="sidebar_top_options">
@@ -270,6 +275,27 @@ const SidebarMain = () => {
                 </div>
               </button>
           </div>
+
+
+          {/* <div className='rewarding_box_main'>
+            <img src={modal_coins} className='img-fluid'></img>
+
+            <div className='main_glowing_box_div'>
+            <div className='glowing_div'></div>
+            </div>
+
+            <div className='rewarding_box_content'>
+              <h2 className='rewarding_congrat_title'>CONGRATULATIONS</h2>
+
+              <p className='free_money_text'>You've got free money to bet on our games!</p>
+
+              <h2 className='rewarding_money_amount'>0.89 DOT</h2>
+
+              <div>
+                <button className='claim_rewards_btn'>Claim Rewards</button>
+              </div>
+            </div>
+          </div> */}
           
         </Modal.Footer>
       </Modal>

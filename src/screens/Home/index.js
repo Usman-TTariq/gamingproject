@@ -2,7 +2,7 @@ import React from "react";
 import UserLayout from "../../components/Layout/userlayout";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { agt, alllotteriesIcon, avator, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, flag01, flag02, flag03, flag04, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, ModalLeftImg, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, spinIcon, spinner_head_bk, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
+import { agt, alllotteriesIcon, avator, bannerSliderImg, batBall, BCLotteryIcon, bestgames01, bestgames02, bestgames03, bestgames04, betAmount01, betAmount02, betAmount03, betIcon01, bitcoin, bonusIcon, casinoIcon, changeBannerImg, communityIcon01, communityIcon02, communityIcon03, communityIcon04, communityIcon05, communityIcon06, communityIcon07, communityIcon08, communityIcon09, cricketIcon, cricketteamflag, dailyContestIcon, desktopHeroBanner01, desktopHeroBanner02, desktopHeroBanner03, dropdownArrow, etherum, fireIcon, fishingIcon, flag01, flag02, flag03, flag04, footballIcon, forDesktop, gameProviderImg01, gameProviderImg02, gameProviderImg03, gameProviderImg04, gameProviderImg05, gridIcon, lobbyicon, lotteryIcon, ModalLeftImg, networkIcon01, networkIcon02, networkIcon03, networkIcon04, networkIcon05, networkIcon06, networkIcon07, networkIcon08, networkIcon09, networkIcon10, networkIcon11, networkIcon12, networkIcon13, networkIcon14, networkIcon15, networkIcon16, networkIcon17, networkIcon18, networkIcon19, popularIcon, popularIcon01, promoArrow, promotionsIcon, providersImg, questIcon, raffleIcon, registerRightimg, searchIcon, secondBanner, sidebarCasinoIcon, SlotIcon, spinIcon, spinner_head_bk, sportsIcon, teamImg, topgames01, topgames02, topgames03, topgames04, topgamesIcon, trendingImg01, trendingImg02, trendingImg03, trendingImg04, updownIcon, vipClubICon, wheelBorder } from "../../asserts/images";
 import { Autoplay, Pagination } from 'swiper/modules';
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -16,12 +16,14 @@ import Modal from 'react-bootstrap/Modal';
 import LoginForm from "../../components/LoginForm";
 import RegisterForm from "../../components/RegisterForm";
 import SidebarMain from "../../components/Sidebar";
+import MobileTabs from "../../components/mobileTabs";
 import {
   faStar
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import CustomLoader from "../../components/CustomLoader";
 import DesktopTable from "../../components/DesktopTable";
+import MobileTable from "../../components/MobileTable";
 
 
 const Home = () => {
@@ -191,7 +193,9 @@ const Home = () => {
 
       <UserLayout>
 
-      <section className="tabs_section">
+        <MobileTabs/>
+
+      {/* <section className="tabs_section">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -214,35 +218,19 @@ const Home = () => {
                   <span className="tab_title">football</span>
                 </button>
                 <button className="single_tab">
-                  <img src={lobbyicon} alt="icon"></img>
-                  <span className="tab_title">Lobby</span>
+                  <img src={fishingIcon} alt="icon"></img>
+                  <span className="tab_title">Fishing</span>
                 </button>
                 <button className="single_tab">
-                  <img src={cricketIcon} alt="icon"></img>
-                  <span className="tab_title">Live Casino</span>
-                </button>
-                <button className="single_tab">
-                  <img src={footballIcon} alt="icon"></img>
-                  <span className="tab_title">football</span>
-                </button>
-                <button className="single_tab">
-                  <img src={lobbyicon} alt="icon"></img>
-                  <span className="tab_title">Lobby</span>
-                </button>
-                <button className="single_tab">
-                  <img src={cricketIcon} alt="icon"></img>
-                  <span className="tab_title">Live Casino</span>
-                </button>
-                <button className="single_tab">
-                  <img src={footballIcon} alt="icon"></img>
-                  <span className="tab_title">football</span>
+                  <img src={SlotIcon} alt="icon"></img>
+                  <span className="tab_title">Slot</span>
                 </button>
               </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="top_banner">
 
@@ -1467,108 +1455,21 @@ const Home = () => {
           <div className="game_winners_main">
             <div className="game_winners_tabs">
               <div className="winners_first-tab">
-                <button>My Bets</button>
+                <button onClick={handleClick}>My Bets</button>
               </div>
               <div className="winners_second-tab">
-                <button>winners of the day</button>
+                <button onClick={handleClick}>winners of the day</button>
               </div>
               <div className="winners_third-tab">
-                <button>High Rollers</button>
+                <button onClick={handleClick}>High Rollers</button>
               </div>
             </div>
 
             <div className="game_winners_main_table">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Game</th>
-                  <th scope="col">Winners</th>
-                  <th scope="col">Payout</th>
-                </tr>
-              </thead>
-              <tbody className="table-body02">
-                {/* <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td>
-                    -BDT117.49
-                    <img src={etherum} alt="etherum"></img>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td>
-                    -BDT117.49
-                    <img src={bitcoin} alt="etherum"></img>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td>
-                    -BDT117.49
-                    <img src={bitcoin} alt="etherum"></img>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td>
-                    -BDT117.49
-                    <img src={bitcoin} alt="etherum"></img>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td className="green_text">
-                    -BDT117.49
-                    <img src={etherum} alt="etherum"></img>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td className="">
-                    -BDT117.49
-                    <img src={etherum} alt="etherum"></img>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td className="green_text">
-                    -BDT117.49
-                    <img src={etherum} alt="etherum"></img>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td className="">
-                    -BDT117.49
-                    <img src={etherum} alt="etherum"></img>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td>
-                    -BDT117.49
-                    <img src={bitcoin} alt="etherum"></img>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Story Of Vikings</td>
-                  <td>-</td>
-                  <td>
-                    -BDT117.49
-                    <img src={bitcoin} alt="etherum"></img>
-                    </td>
-                </tr> */}
-              </tbody>
-            </table>
+
+            {isLoading && <CustomLoader />}
+            {showTable && <MobileTable />}
+            
             <div className="show_more_data_btn text-center">
               <button className="providers_more_option">More</button>
             </div>

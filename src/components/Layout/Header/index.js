@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./style.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -42,6 +42,29 @@ const Header = () => {
   const handleactiveSectionRegister = (sectionRegister) => {
     setActiveSectionRegister(sectionRegister);
   }
+
+  // const navigate = useNavigate();
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState('');
+
+  useEffect(() => {
+    if (location.pathname === '/cricket') {
+      setActiveTab('cricket');
+    } else if (location.pathname === '/lobby') {
+      setActiveTab('lobby');
+    } 
+    else if (location.pathname === '/casino') {
+      setActiveTab('casino');
+    }    
+    else {
+      setActiveTab('');
+    }
+  }, [location.pathname]);
+
+  const handleTabClick = (tabName, path) => {
+    setActiveTab(tabName);
+    navigate(path);
+  };
 
 
   return (
@@ -99,15 +122,22 @@ const Header = () => {
             </div>
 
             <div className="header_desktop_tabs">
-            <button className="single_tab" onClick={() => navigate("/cricket")}>
+            <button className={`single_tab ${activeTab === 'cricket' ? 'tabbing_btn' : ''}`} 
+            // onClick={() => navigate("/cricket")}
+            onClick={() => handleTabClick('cricket', '/cricket')}
+            >
                 <img src={cricketIcon} alt="icon"></img>
                 <span className="tab_title">Cricket</span>
               </button>
-              <button className="single_tab">
+              <button className={`single_tab ${activeTab === 'lobby' ? 'tabbing_btn' : ''}`} 
+              onClick={() => handleTabClick('lobby', '/lobby')}
+              >
                 <img src={lobbyicon} alt="icon"></img>
                 <span className="tab_title">Lobby</span>
               </button>
-              <button className="single_tab">
+              <button className={`single_tab ${activeTab === 'casino' ? 'tabbing_btn' : ''}`}
+              onClick={() => handleTabClick('casino', '/casino')}
+              >
                 <img src={casinoIcon} alt="icon"></img>
                 <span className="tab_title">Live Casino</span>
               </button>
